@@ -1,0 +1,7 @@
+/* START AUTO-GENERATED FROM FIGMA */
+export const trianglesLeft = `<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+<path d="M30.9998 2.84387V29.1561L15.4517 16L30.9998 2.84387ZM18.5479 16L28.9998 24.8439V7.15609L18.5479 16Z"/>
+<path d="M15.9998 2.84387V29.1561L0.45166 16L15.9998 2.84387ZM3.54791 16L13.9998 24.8439V7.15609L3.54791 16Z"/>
+</svg>`;
+/* https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/337ead2e-0013-4ee5-ae74-151b6d3b21da */
+/* END AUTO-GENERATED FROM FIGMA */

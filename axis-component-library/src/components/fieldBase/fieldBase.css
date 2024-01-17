@@ -1,0 +1,56 @@
+@import "../../styling/nykredit.css";
+
+:host {
+  display: contents;
+}
+
+label {
+  width: 100%;
+}
+
+/*  */
+/* SHARED VARIANT STYLING */
+/*  */
+
+.component {
+  --label-color: var(--field-label-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  max-width: 100%; /* Ensure that our box will never be clipped by its parent. Always clip the input itself*/
+}
+
+slot:not([name]) {
+  display: block;
+  flex: 1 1 auto;
+  max-width: 100%;
+}
+
+.horizontalWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: stretch;
+  position: relative;
+  gap: var(--spacing);
+  max-width: 100%;
+}
+
+.vertical {
+  max-width: 100%;
+}
+
+.horizontalWrapper > * {
+  flex: 1 1 auto;
+}
+slot[data-active="true"] {
+  display: block;
+}
+
+slot[name="leading"],
+slot[name="trailing"] {
+  flex: 0 0 auto;
+  overflow: hidden;
+}

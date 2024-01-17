@@ -1,0 +1,34 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './flowStepperItem.stories';
+
+<Meta title="SOLID/FlowStepperItem" />
+
+# FlowStepperItem Component
+
+Demo component showing how you can create a flow stepper item with icon
+
+<Canvas of={Stories.Default} />
+
+## Description
+
+The flow stepper item can be used in combination of flow stepper list to create a flow.
+
+## Child components
+
+This component is a componsition of the following
+
+- stack
+- elevation
+- icon
+- divider
+
+## @API
+
+### Properties
+
+- id (`string`)
+- label (`string`)
+- icon (`string`)
+- isactive (`boolean`)
+- iscompleted (`boolean`)
+- islastitem (`boolean`)

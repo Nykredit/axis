@@ -1,0 +1,14 @@
+/* START AUTO-GENERATED FROM FIGMA */
+export const chartPiePiece = `<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+<g>
+<path d="M0 18C0 10.2677 6.26772 4 14 4H15V17H28V18C28 25.7323 21.7323 32 14 32C6.26772 32 0 25.7323 0 18ZM13 6.04107C6.84022 6.54917 2 11.709 2 18C2 24.6277 7.37228 30 14 30C20.291 30 25.4508 25.1598 25.9589 19H13V6.04107Z"/>
+<path d="M17 0H18C25.7323 0 32 6.26772 32 14V15H17V0ZM19 2.04107V13H29.9589C29.478 7.16995 24.83 2.52197 19 2.04107Z"/>
+</g>
+<defs>
+<clipPath id="clip0_822_2239">
+<rect/>
+</clipPath>
+</defs>
+</svg>`;
+/* https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/1732ee88-3343-4ccc-b73e-1a579f5cec71 */
+/* END AUTO-GENERATED FROM FIGMA */

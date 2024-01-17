@@ -1,0 +1,61 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './amount.stories';
+
+<Meta title="SOLID/Amount" />
+
+# Amount Component
+
+Component showing how you can show an amount with custom label, price and rate
+
+<Canvas of={Stories.Default} />
+
+## Description
+
+This component is created to display an amount how it was designed in the ElBil project.
+
+## Usage
+
+`<nk-amount></nk-amount>`
+
+## Child components
+
+This component is a componsition of the following
+
+- stack
+- label
+
+## External Resources
+
+## @API
+
+### Properties
+
+- variant: (`x-large` | `medium` | `x-small`)
+- text (`string`)
+- price (`string`)
+- rate (`string`)
+- alignment (`left` | `right`)
+
+## Variations
+
+This component both supports different variants of text size and alignment of the label above
+
+### x-large
+
+<Canvas of={Stories.XLarge} />
+
+### medium
+
+<Canvas of={Stories.Medium} />
+
+### x-small
+
+<Canvas of={Stories.XSmall} />
+
+### alignment right
+
+<Canvas of={Stories.AlignRight} />
+
+### Without label
+
+<Canvas of={Stories.WithoutLabel} />

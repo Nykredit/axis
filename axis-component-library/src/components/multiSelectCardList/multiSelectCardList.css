@@ -1,0 +1,5 @@
+@import "../../styling/nykredit.css";
+
+:host([data-variant="default"]) {
+  --max-width: 400px;
+}

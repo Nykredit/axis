@@ -1,0 +1,10 @@
+:host([data-brand="Nykredit"][data-component="Tag"]) {
+  --background-color: var(--solid-action-primary-700);
+  --border-radius: var(--solid-corner-small);
+  --border: none;
+  --padding-x: var(--solid-spacing-3x);
+  --padding-y: var(--solid-spacing-2x);
+  --color: var(--solid-text-100);
+  --height: var(--solid-size-8x);
+  --elevation-justify-content: center;
+}

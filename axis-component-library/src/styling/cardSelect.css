@@ -1,0 +1,44 @@
+:host([data-brand="Nykredit"][data-component="CardSelect"]) {
+  --card-body-padding-x: var(--solid-spacing-6x);
+  --card-body-padding-y: var(--solid-spacing-6x);
+  --card-image-fit: cover;
+  --card-image-height: 200px;
+  --card-image-width: 100%;
+  --box-background: var(--solid-surface-100-light);
+  --box-foreground: var(--solid-surface-100-light);
+  --border-radius: var(--solid-size-1x);
+  --box-overflow: hidden;
+}
+
+:host([data-brand="Nykredit"][data-component="CardSelect"][data-variant="checkbox" i]) {
+  --interaction-height: var(--solid-size-10x);
+  --interaction-width: var(--solid-size-10x);
+  --border-radius: var(--solid-corner-small);
+  --border-style: var(--solid-border-solid);
+  --border-color: var(--solid-accent-secondary-800);
+  --border-width: var(--solid-border-medium);
+  --icon-color: var(--brand-color-white);
+  --icon-size: var(--solid-size-6x);
+  --background-color: unset;
+}
+
+:host([data-brand="Nykredit"][data-component="CardSelect"][data-variant="checkbox" i][data-checked="true" i]) {
+  --background-color: var(--solid-accent-secondary-800);
+}
+
+/* :host([data-brand="Nykredit"][data-component="CardSelect"][data-variant="radio" i][data-checked="true" i]) {
+    --background-color: var(--solid-accent-secondary-800);
+} */
+
+:host([data-brand="Nykredit"][data-component="CardSelect"]:hover) {
+  --box-shadow: var(--solid-shadow-surface-08);
+  --card-box-shadow: var(--solid-shadow-surface-08);
+}
+
+:host([data-brand="Nykredit"][data-component="CardSelect"]:focus-within) {
+  --box-shadow: var(--solid-shadow-surface-08);
+  --card-box-shadow: var(--solid-shadow-surface-08);
+  --elevation-outline-style: var(--solid-border-solid);
+  --elevation-outline-width: var(--solid-size-_5x);
+  --elevation-outline-color: var(--solid-accent-secondary-500);
+}

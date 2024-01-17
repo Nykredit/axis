@@ -1,0 +1,8 @@
+:host([data-brand="Nykredit"][data-component="Card"]) {
+  --padding-content: var(--solid-size-6x);
+  --box-background: var(--solid-surface-100-light);
+  --box-foreground: var(--solid-surface-100-light);
+  --border-radius: var(--solid-size-2x);
+  --box-overflow: hidden;
+  --box-shadow: var(--card-box-shadow, var(--solid-shadow-surface-01));
+}

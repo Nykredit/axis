@@ -1,0 +1,54 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './cardSelect.stories';
+
+<Meta title="SOLID/CardSelect" />
+
+# Card select
+
+Demo component showing how to use card select
+
+<Canvas of={Stories.Default} />
+
+## Description
+
+This component was created in order to be able to select a card with both image and content.
+
+## Usage
+
+`<nk-card-select></nk-card-select>`
+
+## Child components
+
+This component is a componsition of the following
+
+- card
+- image
+- stack
+- elevation
+- checkbox-with-label
+- radio-button-with-label
+
+## @API
+
+### Properties
+
+- variant (`string`)
+- imageurl (`string`)
+- imagealttext (`string`)
+- actiontitle (`string`)
+- actionlabel (`string`)
+- actionvalue (`boolean`)
+- cardid (`string`)
+
+### Event handlers
+
+- Add a onchange handler on `card-select`. The handler returns the target and actionvalue at it's current state.
+
+## Variations
+
+- checkbox
+- radio
+
+### With title
+
+<Canvas of={Stories.WithTitle} />

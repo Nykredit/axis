@@ -1,0 +1,32 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './navigationButton.stories';
+
+<Meta title="SOLID/NavigationButton" />
+
+# NavigationButton Component
+
+The navigation button component
+
+<Canvas of={Stories.Example} />
+
+## Description
+
+## Usage
+
+`<nk-button-nav></nk-button-nav>`
+
+## @API
+
+### Properties
+
+- label (string)
+- iconname (string)
+- variant (`default`,`icon-only`)
+
+### Event handlers
+
+- click (CustomEvent) - Event fired when the button is clicked
+
+## Icon-only variant
+
+<Canvas of={Stories.IconOnly} />

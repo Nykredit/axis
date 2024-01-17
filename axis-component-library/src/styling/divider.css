@@ -1,0 +1,4 @@
+:host([data-brand="Nykredit"][data-component="Divider"]) {
+  --size: var(--solid-border-medium);
+  --color: var(--solid-neutral-03-300);
+}

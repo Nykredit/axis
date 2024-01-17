@@ -1,0 +1,40 @@
+:host([data-brand="Nykredit"][data-component="Checkbox"]) {
+  --background-color: unset;
+  --border-radius: var(--solid-corner-small);
+  --border-style: var(--solid-border-solid);
+  --border-color: var(--solid-action-primary-700);
+  --border-width: var(--solid-border-medium);
+  --icon-color: var(--solid-text-100);
+  --icon-size: var(--solid-size-6x);
+  --font-color: var(--solid-text-100);
+  --icon-fill: var(--solid-text-100);
+  --icon-stroke: var(--solid-text-100);
+  --interaction-height: var(--solid-size-10x);
+  --interaction-width: var(--solid-size-10x);
+}
+
+:host([data-brand="Nykredit"][data-component="Checkbox"][data-checked="true"]) {
+  --background-color: var(--solid-action-primary-700);
+}
+
+:host([data-brand="Nykredit"][data-component="Checkbox"][data-checked="true"][data-disabled="true"]) {
+  --background-color: var(--solid-neutral-03-500);
+  --border-color: var(--solid-neutral-03-500);
+}
+
+:host([data-brand="Nykredit"][data-component="Checkbox"][data-disabled="false"]:focus-within) {
+  --border-color: var(--solid-accent-secondary-500);
+}
+
+:host([data-brand="Nykredit"][data-component="Checkbox"][data-checked="true"][data-disabled="false"]:active) {
+  --background-color: var(--solid-action-primary-900);
+  --border-color: var(--solid-action-primary-900);
+}
+
+:host([data-brand="Nykredit"][data-component="Checkbox"][data-checked="false"][data-disabled="false"]:active) {
+  --border-color: var(--solid-action-primary-900);
+}
+
+:host([data-brand="Nykredit"][data-component="Checkbox"][data-checked="false"][data-disabled="true"]) {
+  --border-color: var(--solid-neutral-03-500);
+}

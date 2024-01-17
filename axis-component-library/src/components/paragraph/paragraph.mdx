@@ -1,0 +1,60 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './paragraph.stories';
+
+<Meta title="SOLID/Paragraph" />
+
+# Paragraph Component
+
+Multi-line text component
+
+<Canvas of={Stories.Example} />
+
+## --XSS WARNING--
+
+You MUST ensure that any text provided is safe for HTML injection, or set the unsafe property to "false". Do not allow the user to specify the text input for this component without setting the unsafe property to false. Later in 2022 we will change the unsafe property to default to a safe configuration.
+
+## Description
+
+The paragraph component supports rendering of multiline text, with optional HTML rendering
+
+## Usage
+
+`<nk-paragraph></nk-paragraph>`
+
+## @API
+
+### Properties
+
+- text (string)
+- variant (`manchet`, `body`, `body-emphasis`, `legal`, `assistive`)
+- unsafe (boolean) - defaults to true
+
+## Variants
+
+### Manchet text
+
+<Canvas of={Stories.Manchet} />
+
+### Body text
+
+<Canvas of={Stories.Body} />
+
+### Body Emphasis text
+
+<Canvas of={Stories.BodyEmphasis} />
+
+### Legal text
+
+<Canvas of={Stories.Legal} />
+
+### Assistive text
+
+<Canvas of={Stories.Assistive} />
+
+### Assistive emphasis text
+
+<Canvas of={Stories.AssistiveEmphasis} />
+
+### body with unsafe text
+
+<Canvas of={Stories.BodyUnsafe} />

@@ -1,0 +1,41 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './checkboxDetailedList.stories';
+
+<Meta title="SOLID/CheckboxDetailedList" />
+
+# CheckboxDetailedList Component
+
+Component showing how you can show a list of checkboxes
+
+<Canvas of={Stories.Vertical} />
+
+## Description
+
+This component is created to display a list of checkboxes with title and label.
+
+## Usage
+
+`<nk-checkbox-list></nk-checkbox-list>`
+
+## Child components
+
+This component is a componsition of the following
+
+- checkbox-list-input
+
+## External Resources
+
+## @API
+
+### Properties
+
+- orientation: (`vertical` | `horizontal`)
+- label (`string`)
+- options (`array`)
+- values (`array`)
+
+## Variations
+
+### horizontal
+
+<Canvas of={Stories.Horizontal} />

@@ -1,0 +1,7 @@
+/* START AUTO-GENERATED FROM FIGMA */
+export const enlarge = `<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.0002 20.5858L16.0002 26.5858L22.0002 20.5858L23.4144 22L16.0002 29.4142L8.58594 22L10.0002 20.5858Z"/>
+<path d="M16.0002 2.58582L23.4144 10L22.0002 11.4142L16.0002 5.41424L10.0002 11.4142L8.58594 10L16.0002 2.58582Z"/>
+</svg>`;
+/* https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/38deca89-2e44-4898-a7b9-b465b978c944 */
+/* END AUTO-GENERATED FROM FIGMA */

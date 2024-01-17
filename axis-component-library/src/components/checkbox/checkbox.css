@@ -1,0 +1,60 @@
+@import "../../styling/nykredit.css";
+
+:host {
+  display: contents;
+}
+
+.box {
+  display: inline-block;
+  --checkbox-radius: var(--border-radius);
+}
+
+.checkbox {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--border-width) var(--border-style) var(--border-color);
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  border-radius: var(--checkbox-radius);
+  width: var(--icon-size, initial);
+  height: var(--icon-size, initial);
+}
+
+.checkbox-native-control {
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: var(--interaction-height);
+  height: var(--interaction-width);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.checkbox-native-control:focus:not(:focus-visible) {
+  border: unset;
+}
+
+.checkbox-native-control:disabled {
+  cursor: initial;
+}
+
+/* Hide icon when checkbox is unchecked */
+.checkbox-native-control:not(:checked) ~ .checkbox .icon {
+  opacity: 0;
+}
+
+.icon {
+  opacity: 1;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}

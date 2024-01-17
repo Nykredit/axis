@@ -1,0 +1,28 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './divider.stories';
+
+<Meta title="SOLID/Divider" />
+
+# Divider Component
+
+Dividers should only be used if elements cannot be separated using white space. Use dividers sparingly, to create groupings rather than separate items.
+
+<Canvas of={Stories.Example} />
+
+## Description
+
+Divider component to add a break line between other component.
+
+## Usage
+
+`<nk-divider></nk-divider>`
+
+## Vertical orientation
+
+<Canvas of={Stories.Vertical} />
+
+## @API
+
+### Properties
+
+- orientation (`horizontal` | `vertical`)

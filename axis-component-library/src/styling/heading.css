@@ -1,0 +1,219 @@
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Heading"]) {
+  --font-family: var(--brand-font-family);
+  --font-color: var(--solid-action-primary-900);
+}
+
+/* SOLID DARK*/
+:host([data-brand="Nykredit"][data-context="Dark"][data-component="Heading"]),
+/* &m */
+:host([data-brand="Nykredit"][data-context="Focus"][data-component="Heading"]) {
+  --font-family: var(--brand-font-family);
+  --font-color: var(--solid-text-100);
+}
+
+/* SOLID*/
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component~="Heading"][data-variant="huge"]),
+/* Nyk legacy*/
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component~="Heading"][data-variant="title"]),
+/* &m*/
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component~="Heading"][data-variant="heading"]) {
+  --font-weight: var(--solid-weight-800);
+  --font-size: var(--solid-size-12x);
+  --font-line-height: var(--solid-size-15x);
+  --font-cap-size-before: 0em; /* dependent on font size and line height */
+  --font-cap-size-after: 0em; /* dependent on font size and line height */
+  --font-style: initial;
+  --font-transform: initial;
+  --font-letter-spacing: var(--solid-letter-spacing-100);
+}
+
+/* SOLID*/
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Heading"][data-variant="xlarge"]) {
+  --font-size: var(--solid-size-10x);
+  --font-weight: var(--solid-weight-800);
+  --font-line-height: var(--solid-size-13x);
+  --font-cap-size-before: 0em; /* dependent on font size and line height */
+  --font-cap-size-after: 0em; /* dependent on font size and line height */
+  --font-style: initial;
+  --font-transform: initial;
+  --font-letter-spacing: var(--solid-letter-spacing-100);
+}
+
+/* Nyk legacy*/
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Heading"][data-variant="sub-title"]),
+/* Nyk SOLID*/
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Heading"][data-variant="large"]) {
+  --font-size: var(--solid-size-8_5x);
+  --font-weight: var(--solid-weight-800);
+  --font-line-height: var(--solid-size-11x);
+  --font-cap-size-before: 0em; /* dependent on font size and line height */
+  --font-cap-size-after: 0em; /* dependent on font size and line height */
+  /* --font-letter-spacing: calc(var(--size-base-1px) * 0.6); */
+  --font-style: initial;
+  --font-transform: initial;
+  --font-letter-spacing: var(--solid-letter-spacing-100);
+}
+
+/* SOLID */
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Heading"][data-variant="medium"]) {
+  --font-weight: var(--solid-weight-800);
+  --font-size: var(--solid-size-7x);
+  --font-cap-size-before: 0em; /* dependent on font size and line height */
+  --font-cap-size-after: 0em; /* dependent on font size and line height */
+  --font-line-height: var(--solid-size-9x);
+  --font-style: initial;
+  --font-transform: initial;
+  --font-letter-spacing: var(--solid-letter-spacing-100);
+}
+
+/* &m*/
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Heading"][data-variant="sub-heading"]),
+/*&m*/
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component~="Heading"][data-variant~="card-heading"]),
+/* SOLID */
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Heading"][data-variant="small"]) {
+  --font-weight: var(--solid-weight-700);
+  --font-size: var(--solid-size-6x);
+  --font-cap-size-before: 0em; /* dependent on font size and line height */
+  --font-cap-size-after: 0em; /* dependent on font size and line height */
+  --font-line-height: var(--solid-size-8x);
+  --font-style: initial;
+  --font-transform: initial;
+  --font-letter-spacing: var(--solid-letter-spacing-100);
+}
+/*&m*/
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component~="Heading"][data-variant~="section-heading"]),
+/* SOLID */
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Heading"][data-variant="xsmall"]) {
+  --font-weight: var(--solid-weight-700);
+  --font-size: var(--solid-size-5x);
+  --font-cap-size-before: 0em; /* dependent on font size and line height */
+  --font-cap-size-after: 0em; /* dependent on font size and line height */
+  --font-line-height: var(--solid-size-7x);
+  --font-style: initial;
+  --font-transform: initial;
+  --font-letter-spacing: var(--solid-letter-spacing-100);
+}
+
+/* SOLID */
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Heading"][data-variant="tiny"]) {
+  --font-weight: var(--solid-weight-700);
+  --font-size: var(--solid-size-3_5x);
+  --font-cap-size-before: 0em; /* dependent on font size and line height */
+  --font-cap-size-after: 0em; /* dependent on font size and line height */
+  --font-line-height: var(--solid-size-5x);
+  --font-style: initial;
+  --font-transform: Uppercase;
+  --font-letter-spacing: var(--solid-letter-spacing-850);
+}
+
+@media only screen and (max-width: 767px) {
+  /* SOLID*/
+  :host([data-brand="Nykredit"][data-context~="Default" i][data-component~="Heading"][data-variant="huge"]),
+/* Nyk legacy*/
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component~="Heading"][data-variant="title"]),
+/* &m*/
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component~="Heading"][data-variant="heading"]) {
+    --font-weight: var(--solid-weight-800);
+    --font-size: var(--solid-size-8x);
+    --font-line-height: var(--solid-size-10x);
+    --font-cap-size-before: 0em; /* dependent on font size and line height */
+    --font-cap-size-after: 0em; /* dependent on font size and line height */
+  }
+
+  /* SOLID*/
+  :host([data-brand="Nykredit"][data-context~="Default" i][data-component="Heading"][data-variant="xlarge"]) {
+    --font-size: var(--solid-size-7x);
+    --font-weight: var(--solid-weight-800);
+    --font-line-height: var(--solid-size-9x);
+    --font-cap-size-before: 0em; /* dependent on font size and line height */
+    --font-cap-size-after: 0em; /* dependent on font size and line height */
+  }
+
+  /* Nyk legacy*/
+  :host([data-brand="Nykredit"][data-context~="Default" i][data-component="Heading"][data-variant="sub-title"]),
+/* Nyk SOLID*/
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Heading"][data-variant="large"]) {
+    --font-size: var(--solid-size-6_5x);
+    --font-weight: var(--solid-weight-800);
+    --font-line-height: var(--solid-size-8x);
+    --font-cap-size-before: 0em; /* dependent on font size and line height */
+    --font-cap-size-after: 0em; /* dependent on font size and line height */
+    /* --font-letter-spacing: calc(var(--size-base-1px) * 0.6); */
+  }
+
+  /* SOLID */
+  :host([data-brand="Nykredit"][data-context~="Default" i][data-component="Heading"][data-variant="medium"]) {
+    --font-weight: var(--solid-weight-800);
+    --font-size: var(--solid-size-5_5x);
+    --font-cap-size-before: 0em; /* dependent on font size and line height */
+    --font-cap-size-after: 0em; /* dependent on font size and line height */
+    --font-line-height: var(--solid-size-7x);
+  }
+
+  /* &m*/
+  :host([data-brand="Nykredit"][data-context~="Default" i][data-component="Heading"][data-variant="sub-heading"]),
+/*&m*/
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component~="Heading"][data-variant~="card-heading"]),
+/* SOLID */
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Heading"][data-variant="small"]) {
+    --font-weight: var(--solid-weight-700);
+    --font-size: var(--solid-size-5x);
+    --font-cap-size-before: 0em; /* dependent on font size and line height */
+    --font-cap-size-after: 0em; /* dependent on font size and line height */
+    --font-line-height: var(--solid-size-6x);
+  }
+  /*&m*/
+  :host([data-brand="Nykredit"][data-context~="Default" i][data-component~="Heading"][data-variant~="section-heading"]),
+/* SOLID */
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Heading"][data-variant="xsmall"]) {
+    --font-weight: var(--solid-weight-700);
+    --font-size: var(--solid-size-4_5x);
+    --font-cap-size-before: 0em; /* dependent on font size and line height */
+    --font-cap-size-after: 0em; /* dependent on font size and line height */
+    --font-line-height: var(--solid-size-6x);
+  }
+
+  /* SOLID */
+  :host([data-brand="Nykredit"][data-context~="Default" i][data-component="Heading"][data-variant="tiny"]) {
+    --font-weight: var(--solid-weight-700);
+    --font-size: var(--solid-size-3_5x);
+    --font-cap-size-before: 0em; /* dependent on font size and line height */
+    --font-cap-size-after: 0em; /* dependent on font size and line height */
+    --font-line-height: var(--solid-size-5x);
+  }
+}
+
+/* 
+  TITLE
+  CONTEXT: ALL
+  SMALL DEVICE OVERRIDE
+*/
+@media only screen and (max-width: 767px) {
+  :host([data-brand="Nykredit"][data-context~="Default" i][data-component~="Heading"][data-variant~="title"]),
+  *[data-brand="Nykredit"][data-context~="Default" i][data-component~="Heading"][data-varian~="title"],
+  :host([data-brand="Nykredit"][data-context="Dark"][data-component~="Heading"][data-variant="title"]),
+  *[data-brand="Nykredit"][data-context="Dark"][data-component~="Heading"][data-variant="title"] {
+    /* Small device override */
+    --font-size: var(--solid-size-8x);
+    --font-line-height: var(--solid-size-10x);
+  }
+}
+
+/* 
+  SUB-TITLE
+  CONTEXT: ALL
+  SMALL DEVICE OVERRIDE
+*/
+@media only screen and (max-width: 767px) {
+  :host([data-brand="Nykredit"][data-context~="Default" i][data-component~="Heading"][data-component~="sub-title"]),
+  *[data-brand="Nykredit"][data-context~="Default" i][data-component~="Heading"][data-component~="sub-title"],
+  :host([data-brand="Nykredit"][data-context="Dark"][data-component~="Heading"][data-component~="sub-title"]),
+  *[data-brand="Nykredit"][data-context="Dark"][data-component~="Heading"][data-component~="sub-title"] {
+    /* Small device override */
+    --font-weight: var(--solid-weight-700);
+    --font-size: var(--solid-size-5x);
+    --font-line-height: var(--solid-size-7x);
+    /* --font-letter-spacing: var(--solid-letter-spacing-100); */
+  }
+}

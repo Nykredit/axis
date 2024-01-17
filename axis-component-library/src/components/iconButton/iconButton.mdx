@@ -1,0 +1,78 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './iconButton.stories';
+
+<Meta title="SOLID/IconButton" />
+
+# IconButton component
+
+Button with an icon instead of label
+
+<Canvas of={Stories.Add} />
+
+## Description
+
+The IconButton is a minimal button, where instead of a visible label, the button contains an icon. The IconButton is typically used to add or remove items in lists, where labeled buttons may look to distracting.
+
+## Usage
+
+`<nk-button-icon></nk-button-icon>`
+
+### Do:
+
+- Use the icon button where the context is clear
+
+### Do not:
+
+- Use icon buttons if the label is required to understand the function of the button.
+- Use the same IconButton for multiple different unrelated functions
+
+## Child components
+
+This component uses the **Icon** component
+
+## @API
+
+### Properties
+
+- icon (string) - the name of the icon
+- variant (string) - The style of the button
+  - `filled/primary`
+  - `neutral/secondary`
+  - `ghost/tertiary`
+  - `outline`
+
+## Variations
+
+Following are the different style variants
+
+### Filled/Primary
+
+<Canvas of={Stories.Primary} />
+
+### Disabled Filled/Primary
+
+<Canvas of={Stories.PrimaryDisabled} />
+
+### Neutral/Secondary
+
+<Canvas of={Stories.Secondary} />
+
+### Disabled Neutral/Secondary
+
+<Canvas of={Stories.SecondaryDisabled} />
+
+### Ghost/Tertiary
+
+<Canvas of={Stories.Tertiary} />
+
+### Disabled Ghost/Tertiary
+
+<Canvas of={Stories.TertiaryDisabled} />
+
+### Outline
+
+<Canvas of={Stories.Outline} />
+
+### Disabled Outline
+
+<Canvas of={Stories.OutlineDisabled} />

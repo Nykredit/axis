@@ -1,0 +1,28 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './flowStepperList.stories';
+
+<Meta title="SOLID/FlowStepperList" />
+
+# FlowStepperList Component
+
+Demo component showing how you can create a flow stepper list with flow-stepper-item
+
+<Canvas of={Stories.Default} />
+
+## Description
+
+The flow stepper list can be used to show the steps in a flow.
+The currentstep variable holds information about the current step (id).
+
+## Child components
+
+This component is a componsition of the following
+
+- flow-stepper-item
+
+## @API
+
+### Properties
+
+- id (`array`)
+- currentstep (`string`)

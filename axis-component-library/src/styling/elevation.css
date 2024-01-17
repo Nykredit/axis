@@ -1,0 +1,51 @@
+/** Elevations */
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Elevation"][data-variant="01" i]) {
+  --box-shadow: var(--solid-shadow-surface-01);
+  --transform: initial;
+}
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Elevation"][data-variant="02" i]) {
+  --box-shadow: var(--solid-shadow-surface-02);
+  --transform: initial;
+}
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Elevation"][data-variant="04" i]) {
+  --box-shadow: var(--solid-shadow-surface-04);
+  --transform: initial;
+}
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Elevation"][data-variant="08" i]) {
+  --box-shadow: var(--solid-shadow-surface-08);
+  --transform: initial;
+}
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Elevation"][data-variant="12" i]) {
+  --box-shadow: var(--solid-shadow-surface-12);
+  --transform: initial;
+}
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Elevation"][data-variant="16" i]) {
+  --box-shadow: var(--solid-shadow-surface-16);
+  --transform: initial;
+}
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Elevation"][data-variant="100" i]) {
+  --box-shadow: var(--solid-shadow-surface-24);
+  --transform: initial;
+}
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Elevation"][data-variant="none" i]) {
+  --box-shadow: initial;
+  --transform: initial;
+}
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Elevation"][data-variant="flat" i]) {
+  --box-shadow: initial;
+  --transform: initial;
+}
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Elevation"][data-variant="inherit" i]) {
+  /* --box-shadow: initial; */ /* Maybe box shadow is set, maybe not*/
+  --transform: initial;
+}

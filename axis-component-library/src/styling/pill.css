@@ -1,0 +1,43 @@
+:host([data-brand="Nykredit"][data-component="Pill"]) {
+  --min-height: 0px;
+  --min-width: var(--interaction-size-min);
+  --label-color: var(--interaction-secondary-text-color);
+  --font-color: var(--interaction-secondary-text-color);
+  --icon-color: var(--interaction-secondary-text-color);
+  --padding: var(--interaction-input-padding-y)
+    var(--interaction-input-padding-x);
+  --box-foreground: var(--interaction-secondary-background);
+  --border-radius: calc(var(--interaction-input-padding-y) * 1.5) / 50%;
+  --elevation-border-width: var(--input-border-width);
+  --elevation-border-style: var(--input-border-style);
+  --elevation-border-color: var(--input-border-color);
+  --margin-x: var(--solid-size-3x);
+  --empty-box-width: var(--solid-size-4x);
+  --empty-box-height: var(--solid-size-4x);
+}
+
+:host([data-brand="Nykredit"][data-component="Pill"][data-checked="true"][data-disabled="false"]) {
+  --box-foreground: var(--interaction-primary-background);
+  --label-color: var(--interaction-primary-text-color);
+  --font-color: var(--interaction-primary-text-color);
+  --icon-color: var(--interaction-primary-text-color);
+  --elevation-border-color: var(--interaction-primary-background);
+}
+
+:host([data-brand="Nykredit"][data-component="Pill"][data-checked="false"][data-disabled="true"]) {
+}
+
+:host([data-brand="Nykredit"][data-component="Pill"][data-checked="true"][data-disabled="true"]) {
+}
+
+:host([data-brand="Nykredit"][data-component="Pill"][data-disabled="false"]:focus-within) {
+}
+
+:host([data-brand="Nykredit"][data-component="Pill"]:not([data-disabled="true"]):hover) {
+}
+
+:host([data-brand="Nykredit"][data-component="Pill"][data-checked="true"][data-disabled="false"]:active) {
+}
+
+:host([data-brand="Nykredit"][data-component="Pill"][data-checked="false"][data-disabled="false"]:active) {
+}

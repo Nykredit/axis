@@ -1,0 +1,15 @@
+@import "../../styling/nykredit.css";
+
+.component {
+  background-color: var(--color);
+}
+
+.horizontal {
+  width: 100%;
+  height: var(--size);
+}
+
+.vertical {
+  height: 100%;
+  width: var(--size);
+}

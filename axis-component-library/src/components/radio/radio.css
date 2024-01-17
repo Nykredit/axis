@@ -1,0 +1,75 @@
+@import "../../styling/nykredit.css";
+
+:host {
+  display: contents;
+}
+
+.component {
+  position: relative;
+  width: var(--width);
+  height: var(--height);
+}
+
+.box {
+  display: block;
+  pointer-events: none;
+  background-color: var(--background-color, unset);
+}
+
+.hit-target {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: var(--interaction-width);
+  height: var(--interaction-height);
+  border-radius: var(--border-radius);
+}
+
+.input {
+  opacity: 0;
+  cursor: pointer;
+  margin: 0;
+}
+
+.radiobutton {
+  width: var(--width);
+  height: var(--height);
+  border-radius: var(--border-radius);
+  border-style: var(--border-style);
+  border-width: var(--border-width);
+  border-color: var(--border-color);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.radiobutton:after {
+  content: "";
+  position: relative;
+  display: none;
+  width: var(--dot-width);
+  height: var(--dot-height);
+  border-radius: var(--border-radius);
+  background-color: var(--dot-background-color);
+}
+
+.input:checked ~ .radiobutton:after {
+  display: block;
+}
+
+.input:disabled ~ .radiobutton {
+  opacity: var(--opacity);
+}
+
+.input:disabled {
+  cursor: initial;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}

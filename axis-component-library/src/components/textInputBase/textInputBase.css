@@ -1,0 +1,43 @@
+@import "../../styling/nykredit.css";
+
+:host {
+  display: contents;
+}
+
+.component {
+  border: none;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  line-height: var(--font-line-height);
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  color: var(--font-color);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.capsize {
+  width: 100%;
+}
+
+.capsize:before {
+  content: "";
+  display: table;
+  opacity: 0;
+}
+.capsize:after {
+  content: "";
+  display: table;
+  opacity: 0;
+}
+.capsize:before {
+  margin-bottom: var(--font-cap-size-before);
+}
+
+.capsize:after {
+  margin-top: var(--font-cap-size-after);
+}

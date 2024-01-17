@@ -1,0 +1,16 @@
+:host([data-brand="Nykredit"][data-component="UnorderedListItem"]) {
+  --marker-color: var(--solid-accent-primary-500);
+  --marker-size: var(--solid-size-6x);
+  --padding-right: var(--solid-spacing-none);
+  --padding-left: var(--solid-spacing-4x);
+  --padding-top: var(--solid-spacing-3x);
+  --padding-bottom: var(--solid-spacing-3x);
+}
+
+:host([data-brand="Nykredit"][data-context="Dark" i][data-component="UnorderedListItem"]) {
+  --marker-color: var(--solid-text-100);
+}
+
+:host([data-brand="Nykredit"][data-component="UnorderedList"]) {
+  --padding-left: var(--solid-spacing-4x);
+}

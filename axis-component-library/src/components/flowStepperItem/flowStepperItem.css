@@ -1,0 +1,56 @@
+@import "../../styling/nykredit.css";
+
+:host {
+  --color: var(--solid-neutral-03-500); /* divider color */
+  --border-radius: var(--solid-corner-fully);
+  --elevation-border-style: var(--solid-border-solid);
+  --elevation-border-width: var(--solid-size-1x);
+  --elevation-border-color: var(--solid-neutral-03-500);
+  --icon-stroke: var(--solid-neutral-03-500);
+  --icon-fill: var(--solid-neutral-03-500);
+  --icon-color: var(--solid-neutral-03-500);
+  --fill: var(--solid-neutral-03-500);
+}
+
+.divider {
+  width: 100%;
+}
+
+.box {
+  width: var(--solid-size-11x);
+  height: var(--solid-size-11x);
+  min-width: var(--solid-size-11x);
+  min-height: var(--solid-size-11x);
+}
+
+.center {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.is-active {
+  --elevation-border-color: var(--solid-action-primary-400);
+  --icon-stroke: var(--solid-action-primary-400);
+  --icon-fill: var(--solid-action-primary-400);
+  --icon-color: var(--solid-action-primary-400);
+  --fill: var(--solid-action-primary-400);
+}
+
+.is-active .divider {
+  --color: var(--solid-neutral-03-500);
+}
+
+.is-completed {
+  --elevation-border-color: var(--solid-action-primary-700);
+  --icon-stroke: var(--solid-action-primary-700);
+  --icon-fill: var(--solid-action-primary-700);
+  --icon-color: var(--solid-action-primary-700);
+  --fill: var(--solid-action-primary-700);
+}
+
+.is-completed .divider {
+  --color: var(--solid-action-primary-700);
+}

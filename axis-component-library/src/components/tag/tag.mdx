@@ -1,0 +1,37 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './tag.stories';
+
+<Meta title="SOLID/Tag" />
+
+# Tag component
+
+A simple component to show a box with / without icon and some text
+
+<Canvas of={Stories.Default} />
+
+## Usage
+
+`<nk-tag></nk-tag>`
+
+## Child components
+
+This component is a componsition of the following
+
+- elevation
+- stack
+- icon
+- label
+
+## @API
+
+### Properties
+
+- variant (`default` | `with-icon`)
+- icon (`string`)
+- text (`string`)
+
+## Variations
+
+### Example of tag with icon
+
+<Canvas of={Stories.WithIcon} />

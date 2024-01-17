@@ -1,0 +1,35 @@
+@import "../../styling/nykredit.css";
+
+:host {
+  width: 100%;
+}
+
+.component {
+  background: var(--background);
+  border: var(--border-color) var(--border-style) var(--border-size);
+  border-radius: var(--border-radius);
+  color: var(--color);
+  padding: var(--padding-y) var(--padding-x);
+  --paragraph-color: var(--color);
+}
+
+.assistive-text {
+  position: sticky;
+  display: block;
+  max-width: inherit;
+  min-height: var(--min-height);
+}
+
+.assistive-text.component:before {
+  content: "";
+  position: absolute;
+  top: var(--pointer-top-position);
+  background-color: var(--background);
+  clip-path: polygon(0% 100%, 0% 0%, 100% -100%, 100% 100%);
+  transform: rotate(45deg) translateX(-100%);
+  z-index: -1;
+  left: var(--offset);
+  width: var(--pointer-width);
+  height: var(--pointer-height);
+  border-radius: var(--border-radius);
+}

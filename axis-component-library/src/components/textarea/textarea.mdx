@@ -1,0 +1,47 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './textarea.stories';
+
+<Meta title="SOLID/Textarea" />
+
+# Textarea Component
+
+One-liner Textarea description.
+
+<Canvas of={Stories.Example} />
+
+## Usage
+
+`<nk-textarea></nk-textarea>`
+
+## Description
+
+Replace this with a short description of why this component exists and what it does.
+
+## Usage notes
+
+### Do not:
+
+- Use the textarea for any input except long free form answers
+
+## Child components
+
+This component is a componsition of the following
+
+-
+
+## @API
+
+### Properties
+
+- value (string)
+- maxLength (number)
+
+### Event handlers
+
+- change (ChangeEventArgs) - Event handler for listening for changes in value
+
+### With prefilled value
+
+Below the field already contains some text.
+
+<Canvas of={Stories.Prefilled} />

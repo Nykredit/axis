@@ -1,0 +1,32 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './box.stories';
+
+<Meta title="SOLID/Box" />
+
+# Box Component
+
+Boxes are used as a "foundation" in almost all of our components, nested and used as containers (frame) for content.
+
+<Canvas of={Stories.None} />
+
+## Usage
+
+`<nk-box></nk-box>`
+
+## @API
+
+### Properties
+
+- variant (`none`, `flat`, `inherit`, `raised`)
+
+### Flat variant
+
+<Canvas of={Stories.Flat} />
+
+### Inherit variant
+
+<Canvas of={Stories.Inherit} />
+
+### Raised variant
+
+<Canvas of={Stories.Raised} />

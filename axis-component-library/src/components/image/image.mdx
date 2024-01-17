@@ -1,0 +1,26 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './image.stories';
+
+<Meta title="SOLID/Image" />
+
+# Image component
+
+Demo component showing how to use image
+
+<Canvas of={Stories.Default} />
+
+## Description
+
+This component was created in order to be able to add an image with different variants for cardSelect.
+
+## Usage
+
+`<nk-image></nk-image>`
+
+## @API
+
+### Properties
+
+- url (`string`)
+- alt (`string`)
+- variant (`cover`, `contain`, `fill`, `none`)

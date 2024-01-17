@@ -1,0 +1,64 @@
+:host([data-brand="Nykredit"][data-component="RadioButton"]) {
+  --background-color: unset;
+  --border-color: var(--solid-action-primary-700);
+  --border-radius: var(--solid-corner-fully);
+  --border-style: var(--solid-border-solid);
+  --border-width: var(--solid-border-medium);
+  /* click area on elevation */
+  --interaction-height: var(--solid-size-10x);
+  --interaction-width: var(--solid-size-10x);
+  /* the actual radio button size */
+  --height: var(--solid-size-6x);
+  --width: var(--solid-size-6x);
+  /* the dot inside radio button if selected */
+  --dot-height: var(--solid-size-3x);
+  --dot-width: var(--solid-size-3x);
+  --padding: calc(
+    var(--solid-size-1x) + var(--solid-border-medium)
+  ); /* needs to be calculated since the border otherwise is inside the hover background color */
+  --dot-background-color: transparent;
+  --elevation-border-style: var(--solid-border-solid);
+  --elevation-border-width: 0px;
+  --elevation-border-color: transparent;
+  --opacity: 1;
+}
+
+/* selected */
+:host([data-brand="Nykredit"][data-component="RadioButton"][data-checked="true"]) {
+  --dot-background-color: var(--solid-action-primary-700);
+}
+
+/* selected and disabled */
+:host([data-brand="Nykredit"][data-component="RadioButton"][data-checked="true"][data-disabled="true"]) {
+  --border-color: var(--solid-neutral-03-500);
+  --dot-background-color: var(--solid-neutral-03-500);
+}
+
+/* not selected and disabled */
+:host([data-brand="Nykredit"][data-component="RadioButton"][data-checked="false"][data-disabled="true"]) {
+  --border-color: var(--solid-neutral-03-500);
+}
+
+/* hover */
+:host([data-brand="Nykredit"][data-component="RadioButton"][data-disabled="false"]:hover) {
+  --background-color: var(--solid-action-primary-50);
+}
+
+/* focus within */
+:host([data-brand="Nykredit"][data-component="RadioButton"][data-disabled="false"]:focus-within) {
+  --outer-border-color: var(--solid-accent-secondary-500);
+  --elevation-border-width: var(--solid-border-medium);
+  --elevation-border-color: var(--solid-accent-secondary-500);
+}
+
+/* selected and active */
+:host([data-brand="Nykredit"][data-component="RadioButton"][data-checked="true"][data-disabled="false"]:active) {
+  --background-color: var(--solid-action-primary-100);
+  --elevation-border-color: transparent;
+}
+
+/* not selected and active */
+:host([data-brand="Nykredit"][data-component="RadioButton"][data-checked="false"][data-disabled="false"]:active) {
+  --background-color: var(--solid-action-primary-100);
+  --elevation-border-color: transparent;
+}

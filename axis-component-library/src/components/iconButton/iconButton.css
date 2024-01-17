@@ -1,0 +1,26 @@
+@import "../../styling/nykredit.css";
+
+:host {
+  display: inline-block;
+  --button-radius: var(--border-radius);
+}
+
+.button-content {
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  background-color: var(--background-color);
+  border-radius: var(--button-radius);
+  display: flex;
+  position: relative;
+  border: var(--outline, initial);
+  height: var(--height);
+  width: var(--width);
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  opacity: var(--opacity);
+}
+
+.button-content:hover {
+  cursor: var(--cursor, initial);
+}

@@ -1,0 +1,101 @@
+@import "../../styling/nykredit.css";
+
+:host {
+  display: contents;
+}
+
+.component {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%; /* Ensure that our box will never be clipped by its parent. Always clip the input itself*/
+  position: relative;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  flex-wrap: nowrap;
+  width: 100%;
+  gap: var(--spacing);
+  align-items: center;
+  min-height: var(--min-height);
+  max-height: var(--max-height);
+  --icon-color: var(--field-label-color);
+}
+
+slot {
+  flex: 1 1 auto;
+}
+
+.content {
+  display: block;
+  /* Ensure that the content is flexed */
+  min-width: 0;
+  --label-color: var(--input-color);
+  --text-color: var(--input-color);
+}
+
+slot[name="prefix"],
+slot[name="postfix"] {
+  flex: 0 0 auto;
+  overflow: hidden;
+  transition: opacity var(--animation-length) ease-in;
+}
+
+/*  */
+/* DEFAULT VARIANT STYLING */
+/*  */
+
+.box {
+  max-width: 100%;
+  padding: 0 var(--padding-x);
+  background-color: var(--background);
+  border: var(--border);
+  outline: var(--outline);
+  border-radius: var(--border-radius);
+}
+
+.content-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 100%;
+  align-items: center;
+  /* Ensure that the content is flexed */
+  min-width: 0;
+}
+
+.padding-y {
+  padding: var(--padding-y) 0;
+}
+
+.content-stack {
+  /* Ensure that the content is flexed */
+  min-width: 0;
+  width: 100%;
+  flex: 1 1 auto;
+}
+.content-stack > slot > * {
+  flex: 1 1 auto;
+}
+
+.content-box[data-hasvalue="true" i],
+.content-box:focus-within {
+  opacity: 1;
+}
+.content-box[data-hasvalue="false" i]:not(:focus-within) {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.error {
+  --icon-fill: var(--solid-accent-primary-800);
+  --icon-stroke: transparent;
+}

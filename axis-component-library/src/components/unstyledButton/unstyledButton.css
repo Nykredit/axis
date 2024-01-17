@@ -1,0 +1,49 @@
+@import "../../styling/nykredit.css";
+
+.component {
+  max-width: 100%;
+
+  /* 
+    This should ensure that the button behaves like a standard block element with regards to its size.
+    TODO: Verify that this covers cross browser conserns (SF).
+    Verified in Firefox, Edge and Chrome
+  */
+  inline-size: -webkit-fill-available;
+  inline-size: -moz-available;
+  appearance: unset;
+  writing-mode: unset !important;
+  font-style: unset;
+  font-variant-ligatures: unset;
+  font-variant-caps: unset;
+  font-variant-numeric: unset;
+  font-variant-east-asian: unset;
+  font-weight: unset;
+  font-stretch: unset;
+  font-size: unset;
+  font-family: unset;
+  text-rendering: unset;
+  color: unset;
+  letter-spacing: unset;
+  word-spacing: unset;
+  line-height: unset;
+  text-transform: unset;
+  text-indent: unset;
+  text-shadow: unset;
+  display: unset;
+  text-align: unset;
+  align-items: unset;
+  cursor: unset;
+  box-sizing: unset;
+  background-color: unset;
+  margin: unset;
+  padding: unset;
+  border-width: unset;
+  border-style: unset;
+  border-color: unset;
+  border-image: unset;
+  border-radius: unset;
+  width: inherit;
+  height: auto;
+  flex: 1 1 auto;
+  outline: none;
+}

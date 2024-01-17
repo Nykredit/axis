@@ -1,0 +1,25 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './card.stories';
+
+<Meta title="SOLID/Card" />
+
+# Card Component
+
+Card are used as a "foundation" in all cards, nested and used as containers (frame) for content.
+
+<Canvas of={Stories.Default} />
+
+## Description
+
+A hyperlink in the form of a card with an image, heading, body text and a button-looking label at the bottom.
+
+## @API
+
+### Properties
+
+- imageurl (string)
+- imagealttext (string)
+
+### Without image
+
+<Canvas of={Stories.NoName} />

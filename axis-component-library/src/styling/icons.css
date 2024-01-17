@@ -1,0 +1,43 @@
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Icon"]) {
+  --icon-color-fallback: var(--font-color);
+}
+
+/* #region &money styles */
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Icon"][data-size="avatar" i]) {
+  --icon-size: var(--solid-size-6x);
+}
+
+/* #regionend */
+
+/** SOLID styles*/
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Icon"][data-size="label" i]),
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Icon"][data-size="x-small" i]),
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Icon"][data-variant="x-small" i]) {
+  --icon-size: var(--solid-size-4x);
+}
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Icon"][data-size="small" i]) {
+  --icon-size: var(--solid-size-5x);
+}
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Icon"][data-size="medium" i]) {
+  --icon-size: var(--solid-size-6x);
+}
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Icon"][data-size="large" i]) {
+  --icon-size: var(--solid-size-8x);
+}
+
+/** DEPRECATED STYLES BELOW **/
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Icon"][data-color="interaction" i]) {
+  --icon-color-fallback: var(--interaction-color);
+}
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Icon"][data-color="font" i]) {
+  --icon-color-fallback: var(--font-color);
+}
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Icon"][data-color="font-inverse" i]) {
+  --icon-color-fallback: var(--font-color-inverse);
+}
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Icon"][data-variant="avatar" i]) {
+  --icon-size: var(--graphic-size-avatar);
+}

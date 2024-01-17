@@ -1,0 +1,53 @@
+/* STACKS */
+
+/* Contextual override for stack variant tokens */
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Stack"][data-variant="none" i]),
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Stack"][data-variant="spacing-none" i]) {
+  --stack-spacing: var(--spacing-0px);
+}
+
+/* Contextual override for stack variant tokens */
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Stack"][data-variant="spacing-min" i]) {
+  --stack-spacing: var(--solid-spacing-1x);
+}
+
+/* Contextual override for stack variant tokens */
+/*&M*/
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Stack"][data-variant="close" i]),
+/* SOLID */
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Stack"][data-variant="spacing-tiny" i]) {
+  --stack-spacing: var(--solid-spacing-2x);
+}
+
+/* Contextual override for stack variant tokens */
+/*&M*/
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Stack"][data-variant="related" i]),
+/* SOLID */
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Stack"][data-variant="spacing-xsmall" i]) {
+  --stack-spacing: var(--solid-spacing-3x);
+}
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Stack"][data-variant="spacing-small" i]) {
+  --stack-spacing: var(--solid-spacing-4x);
+}
+
+/* Contextual override for stack variant tokens */
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Stack"][data-variant="spacing-medium" i]) {
+  --stack-spacing: var(--solid-spacing-6x);
+}
+
+/* Contextual override for stack variant tokens */
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Stack"][data-variant="spacing-xlarge" i]) {
+  --stack-spacing: var(--solid-spacing-10x);
+}
+
+/* Contextual override for stack variant tokens */
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Stack"][data-variant="spacing-max" i]) {
+  --stack-spacing: var(--solid-spacing-20x);
+}
+
+/*  DEPRECATED: Contextual override for stack variant tokens */
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Stack"][data-variant="spacing-12x" i]) {
+  --stack-spacing: var(--solid-spacing-12x);
+}

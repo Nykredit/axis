@@ -1,0 +1,32 @@
+@import "../../styling/nykredit.css";
+
+:host {
+  overflow: hidden;
+  cursor: pointer;
+  border-width: var(--border-width);
+  border-style: var(--border-style);
+  border-color: var(--border-color);
+}
+
+.header {
+  padding: var(--padding-header);
+}
+
+.content {
+  box-sizing: border-box;
+  transition: var(--transition-max-height);
+  max-height: var(--max-height);
+  padding: var(--padding-content);
+}
+
+.icon {
+  transition: transform 200ms ease-in;
+}
+
+.icon-open {
+  transform: rotate(-180deg);
+}
+
+.icon-closed {
+  transform: rotate(0);
+}

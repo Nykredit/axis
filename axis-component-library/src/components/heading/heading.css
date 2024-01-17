@@ -1,0 +1,49 @@
+@import "../../styling/nykredit.css";
+
+:host {
+  display: block;
+  max-width: 100%;
+}
+
+.component {
+  line-break: auto;
+  overflow-wrap: break-word;
+  font-size: var(--font-size);
+  line-height: var(--font-line-height);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  font-style: var(--font-style);
+  text-transform: var(--font-transform);
+  color: var(--font-color);
+  letter-spacing: var(--font-letter-spacing);
+  margin: 0px; /* NOTE: this overrules margin-block-start and margin-block-end */
+}
+
+.component:before {
+  margin-bottom: var(--font-cap-size-before);
+}
+
+.component:after {
+  margin-top: var(--font-cap-size-after);
+}
+
+.component:before {
+  content: "";
+  display: table;
+  opacity: 0;
+}
+.component:after {
+  content: "";
+  display: table;
+  opacity: 0;
+}
+
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}

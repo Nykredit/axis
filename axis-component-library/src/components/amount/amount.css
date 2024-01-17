@@ -1,0 +1,13 @@
+@import "../../styling/nykredit.css";
+
+:host {
+  display: inline-block;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}

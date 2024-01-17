@@ -1,0 +1,25 @@
+@import "../../styling/nykredit.css";
+
+:host {
+  display: contents;
+}
+
+.component {
+  border: none;
+  min-height: calc(var(--interaction-size-min) * 3);
+  min-width: calc(var(--interaction-size-min) * 4);
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  line-height: var(--font-input-line-height);
+  font-size: var(--font-input-size);
+  font-family: var(--font-input-family);
+  color: var(--font-input-color);
+  resize: vertical;
+}
+
+.component:focus {
+  /*box-shadow: var(--interaction-secondary-shadow-active);*/
+}

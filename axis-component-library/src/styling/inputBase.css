@@ -1,0 +1,63 @@
+/* InputBase default Styling*/
+
+:host([data-brand="Nykredit"][data-component="InputBase"]) {
+  --outline: var(--solid-border-small) var(--solid-border-solid)
+    var(--solid-neutral-03-500);
+  --border-radius: var(--solid-corner-small);
+  --background: transparent;
+  --padding-x: var(--solid-spacing-4x);
+  --field-label-color: var(--solid-neutral-03-800);
+  --input-color: var(--solid-neutral-03-800);
+}
+
+:host([data-brand="Nykredit"][data-component="InputBase"][data-state="disabled"]) {
+  --field-label-color: var(--solid-neutral-03-500);
+  --input-color: var(--solid-neutral-03-500);
+  --outline: var(--solid-border-small) var(--solid-border-dash)
+    var(--solid-neutral-03-500);
+  --border-radius: var(--solid-corner-small);
+  --background: transparent;
+}
+
+:host([data-brand="Nykredit"][data-component="InputBase"]:hover) {
+  --outline: var(--solid-border-small) var(--solid-border-solid)
+    var(--solid-neutral-03-800);
+  --border-radius: var(--solid-corner-small);
+  --background: transparent;
+}
+
+:host([data-brand="Nykredit"][data-component="InputBase"]:focus-within) {
+  --field-label-color: var(--solid-accent-secondary-800);
+  --input-color: var(--solid-text-primary);
+  --outline: var(--solid-border-medium) var(--solid-border-solid)
+    var(--solid-accent-secondary-800);
+  --border-radius: var(--solid-corner-small);
+  --background: transparent;
+}
+
+:host([data-brand="Nykredit"][data-component="InputBase"][data-state="error"]) {
+  --field-label-color: var(--solid-accent-primary-800);
+  --input-color: var(--solid-neutral-03-800);
+  --outline: var(--solid-border-small) var(--solid-border-solid)
+    var(--solid-accent-primary-800);
+  --border-radius: var(--solid-corner-small);
+  --icon-color: var(--solid-color-error);
+  --background: transparent;
+}
+
+:host([data-brand="Nykredit"][data-component="InputBase"][data-state="error"]:focus-within) {
+  --input-color: var(--solid-text-primary);
+  --outline: var(--solid-border-medium) var(--solid-border-solid)
+    var(--solid-accent-primary-800);
+  --background: transparent;
+}
+
+/*
+validates if IOS. The @supports CSS at-rule lets you specify CSS declarations that depend on a browser's support for CSS features.
+The -apple-system-body is a font property available on IOS and therefore supported.
+*/
+@supports (font: -apple-system-body) and (-webkit-appearance: none) {
+  :host([data-brand="Nykredit"][data-component="InputBase"][data-context="default" i]) {
+    --background: var(--solid-surface-100-light);
+  }
+}

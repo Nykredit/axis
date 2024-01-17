@@ -1,0 +1,18 @@
+/* START AUTO-GENERATED FROM FIGMA */
+export const penMedal = `<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+<g>
+<path d="M0 0H25V9H23V2H2V26H17V28H0V0Z"/>
+<path d="M21 28.382V20.743H19V31.618L24 29.118L29 31.618V20.743H27V28.382L24 26.882L21 28.382Z"/>
+<path d="M24 9C20.6863 9 18 11.6863 18 15C18 18.3137 20.6863 21 24 21C27.3137 21 30 18.3137 30 15C30 11.6863 27.3137 9 24 9ZM16 15C16 10.5817 19.5817 7 24 7C28.4183 7 32 10.5817 32 15C32 19.4183 28.4183 23 24 23C19.5817 23 16 19.4183 16 15Z"/>
+<path d="M5 8H15V10H5V8Z"/>
+<path d="M5 13H13V15H5V13Z"/>
+<path d="M5 18H13V20H5V18Z"/>
+</g>
+<defs>
+<clipPath id="clip0_822_2238">
+<rect/>
+</clipPath>
+</defs>
+</svg>`;
+/* https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/8652323a-8554-46d7-b1d4-fc984c26daa5 */
+/* END AUTO-GENERATED FROM FIGMA */

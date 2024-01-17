@@ -1,0 +1,17 @@
+@import "../../styling/nykredit.css";
+
+.component {
+  --elevation-justify-content: center;
+  padding-left: var(--solid-size-2x);
+  padding-right: var(--solid-size-2x);
+  border-bottom: var(--solid-size-_25x) solid var(--solid-neutral-03-100);
+  height: var(--solid-size-8x);
+}
+
+.border-bottom {
+  border-bottom-color: var(--solid-neutral-03-600);
+}
+
+.hide-border-bottom {
+  border-bottom-color: transparent;
+}

@@ -1,0 +1,6 @@
+@import "../../styling/nykredit.css";
+
+
+.component > *:not(:last-child) {
+  margin-bottom: var(--layout-margin-interaction-interaction);
+}

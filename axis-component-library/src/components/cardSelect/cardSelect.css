@@ -1,0 +1,65 @@
+@import "../../styling/nykredit.css";
+
+:host {
+  cursor: pointer;
+  position: relative;
+  --image-fit: var(--card-image-fit);
+  --image-height: var(--card-image-height);
+  --image-width: var(--card-image-width);
+  --border-style: none;
+  height: 100%;
+  display: flex;
+}
+
+.contents:hover {
+  --box-shadow: var(--solid-shadow-surface-08);
+  --card-box-shadow: var(--solid-shadow-surface-08);
+}
+
+.contents:focus-within {
+  --box-shadow: var(--solid-shadow-surface-08);
+  --card-box-shadow: var(--solid-shadow-surface-08);
+  --elevation-outline-style: var(--solid-border-solid);
+  --elevation-outline-width: var(--solid-size-_5x);
+  --elevation-outline-color: var(--solid-accent-secondary-500);
+}
+
+.contents {
+  display: contents;
+}
+
+.flex-1 {
+  flex: 1 1 auto;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.card {
+  width: 100%;
+}
+
+.component {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 0px;
+  -webkit-appearance: none;
+}
+
+.body {
+  flex: 1 0;
+}
+
+.remove-box {
+  --box-shadow: none;
+  --border-radius: 0px;
+}

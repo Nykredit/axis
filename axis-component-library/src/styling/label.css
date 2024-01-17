@@ -1,0 +1,253 @@
+/* Contextual override for font label variants */
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Label"][data-variant="button" i]) {
+  --font-family: var(--brand-font-family);
+  --font-weight: var(--solid-weight-700);
+  --font-size: var(--solid-size-3_5x);
+  --font-line-height: var(--solid-size-4_5x);
+  --font-cap-size-before: -0.3169em;
+  /* dependent on font size and line height */
+  --font-cap-size-after: -0.2549em;
+  /* dependent on font size and line height */
+  --font-style: initial;
+  --font-transform: uppercase;
+  --font-color: var(--solid-action-primary-700);
+  --font-letter-spacing: var(--solid-letter-spacing-400);
+}
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Label"][data-variant="field" i]) {
+  --font-family: var(--brand-font-family);
+  --font-weight: var(--solid-weight-700);
+  --font-size: var(--solid-size-3x);
+  --font-line-height: var(--solid-size-4x);
+  --font-cap-size-before: -0.3407em;
+  /* dependent on font size and line height */
+  --font-cap-size-after: -0.2787em;
+  /* dependent on font size and line height */
+  --font-style: initial;
+  --font-transform: initial;
+  --font-color: var(--brand-color-black);
+  --font-letter-spacing: var(--solid-letter-spacing-350);
+}
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Label"][data-variant="input" i]),
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="SelectInputBase"]),
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="TextInputBase"]) {
+  /* Font input (text input) tokens */
+  --font-family: var(--brand-font-family);
+  --font-weight: var(--font-weight-regular);
+  --font-size: var(--size-base-16px);
+  --font-line-height: var(--size-base-24px);
+  --font-cap-size-before: -0.406em;
+  /* dependent on font size and line height */
+  --font-cap-size-after: -0.344em;
+  /* dependent on font size and line height */
+  --font-style: initial;
+  --font-transform: initial;
+  --font-color: var(--brand-color-black);
+  --font-letter-spacing: var(--solid-letter-spacing-200);
+}
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Label"][data-variant="input-emphasis" i]) {
+  /* Font input (text input) tokens */
+  --font-family: var(--brand-font-family);
+  --font-weight: var(--font-weight-bold);
+  --font-size: var(--size-base-16px);
+  --font-line-height: var(--size-base-24px);
+  --font-cap-size-before: -0.406em;
+  /* dependent on font size and line height */
+  --font-cap-size-after: -0.344em;
+  /* dependent on font size and line height */
+  --font-style: initial;
+  --font-transform: initial;
+  --font-color: var(--brand-color-black);
+  --font-letter-spacing: var(--solid-letter-spacing-200);
+}
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Label"][data-variant="interaction" i]) {
+  /* Font interaction tokens (pill, optionbutton) */
+  --font-family: var(--brand-font-family);
+  --font-weight: var(--font-weight-bold);
+  --font-size: var(--size-base-14px);
+  --font-line-height: var(--size-base-20px);
+  --font-cap-size-before: -0.3884em;
+  /* dependent on font size and line height */
+  --font-cap-size-after: -0.3263em;
+  /* dependent on font size and line height */
+  --font-style: initial;
+  --font-transform: initial;
+  --font-color: var(--font-color);
+  --font-letter-spacing: var(--solid-letter-spacing-100);
+}
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Label"][data-variant="body" i]) {
+  /* Font body tokens */
+  --font-family: var(--brand-font-family);
+  --font-weight: var(--font-weight-regular);
+  --font-size: var(--size-base-16px);
+  --font-line-height: var(--size-base-24px);
+  --font-cap-size-before: -0.4241em;
+  /* dependent on font size and line height */
+  --font-cap-size-after: -0.3621em;
+  /* dependent on font size and line height */
+  --font-style: initial;
+  --font-transform: initial;
+  --font-color: var(--brand-color-black);
+  --font-letter-spacing: var(--solid-letter-spacing-200);
+}
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Label"][data-variant="body-bold" i]) {
+  /* Font body tokens */
+  --font-family: var(--brand-font-family);
+  --font-weight: var(--solid-weight-800);
+  --font-size: var(--size-base-16px);
+  --font-line-height: var(--size-base-24px);
+  --font-cap-size-before: -0.4241em;
+  /* dependent on font size and line height */
+  --font-cap-size-after: -0.3621em;
+  /* dependent on font size and line height */
+  --font-style: initial;
+  --font-transform: initial;
+  --font-color: var(--brand-color-hav);
+  --font-letter-spacing: var(--solid-letter-spacing-200);
+}
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Label"][data-variant="body-emphasis" i]) {
+  /* Font body emphasis tokens */
+  --font-family: var(--brand-font-family);
+  --font-weight: var(--font-weight-bold);
+  --font-size: var(--size-base-16px);
+  --font-line-height: var(--size-base-24px);
+  --font-cap-size-before: -0.4241em;
+  /* dependent on font size and line height */
+  --font-cap-size-after: -0.3621em;
+  /* dependent on font size and line height */
+  --font-style: initial;
+  --font-transform: initial;
+  --font-color: var(--brand-color-hav);
+  --font-letter-spacing: var(--solid-letter-spacing-200);
+}
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Label"][data-variant="help-assistive" i]) {
+  /* Font help assistive tokens */
+  --font-family: var(--brand-font-family);
+  --font-weight: var(--font-weight-bold);
+  --font-size: var(--size-base-12px);
+  --font-line-height: var(--size-base-16px);
+  --font-cap-size-before: -0.3407em;
+  /* dependent on font size and line height */
+  --font-cap-size-after: -0.2787em;
+  /* dependent on font size and line height */
+  --font-style: initial;
+  --font-transform: initial;
+  --font-color: var(--brand-color-black-alpha-03);
+  --font-letter-spacing: var(--solid-letter-spacing-350);
+}
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Label"][data-variant="interaction" i]) {
+  /* Font interaction tokens (pill, optionbutton) */
+  --font-family: var(--brand-font-family);
+  --font-weight: var(--font-weight-bold);
+  --font-size: var(--size-base-14px);
+  --font-line-height: var(--size-base-20px);
+  --font-cap-size-before: -0.3884em;
+  /* dependent on font size and line height */
+  --font-cap-size-after: -0.3263em;
+  /* dependent on font size and line height */
+  --font-style: initial;
+  --font-transform: initial;
+  --font-color: var(--font-color);
+  --font-letter-spacing: var(--solid-letter-spacing-100);
+}
+
+:host([data-brand="Nykredit"][data-context~="AccentSecondary" i][data-component="Label"][data-variant="interaction" i]) {
+  /* Font interaction tokens (pill, optionbutton) */
+  --font-family: var(--brand-font-family);
+  --font-weight: var(--font-weight-bold);
+  --font-size: var(--size-base-14px);
+  --font-line-height: var(--size-base-20px);
+  --font-cap-size-before: -0.3884em;
+  /* dependent on font size and line height */
+  --font-cap-size-after: -0.3263em;
+  /* dependent on font size and line height */
+  --font-style: initial;
+  --font-transform: initial;
+  --font-color: var(--font-color);
+  --label-color: var(--solid-accent-secondary-800);
+  --font-letter-spacing: var(--solid-letter-spacing-100);
+}
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Label"][data-variant="nav-button" i]) {
+  --font-family: var(--brand-font-family);
+  --font-weight: var(--solid-weight-400);
+  --font-size: var(--solid-size-3x);
+  --font-line-height: var(--solid-size-4x);
+  --font-cap-size-before: -0.3407em;
+  /* dependent on font size and line height */
+  --font-cap-size-after: -0.2787em;
+  /* dependent on font size and line height */
+  --font-style: initial;
+  --font-transform: initial;
+  --font-color: var(--solid-text-primary);
+  --font-letter-spacing: var(--solid-letter-spacing-350);
+}
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Label"][data-variant="superscript" i]) {
+  /* Font body tokens */
+  --font-family: var(--brand-font-family);
+  --font-weight: var(--font-weight-regular);
+  --font-size: var(--size-base-12px);
+  --font-line-height: var(--size-base-16px);
+  --font-cap-size-before: -0.3407em;
+  /* dependent on font size and line height */
+  --font-cap-size-after: -0.2787em;
+  /* dependent on font size and line height */
+  --font-style: initial;
+  --font-transform: initial;
+  --font-color: var(--brand-color-black);
+  --font-letter-spacing: var(--solid-letter-spacing-350);
+}
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Label"][data-variant="amount-xlarge" i]) {
+  --font-family: var(--brand-font-family);
+  --font-weight: var(--solid-weight-800);
+  --font-size: var(--solid-size-10x);
+  --font-line-height: var(--solid-size-13x);
+  --font-letter-spacing: var(--solid-letter-spacing-100);
+  --font-cap-size-before: -0.3241em;
+  /* dependent on font size and line height */
+  --font-cap-size-after: -0.2621em;
+  /* dependent on font size and line height */
+  --font-style: initial;
+  --font-transform: initial;
+  --font-color: var(--brand-color-black);
+}
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Label"][data-variant="amount-large" i]) {
+  --font-family: var(--brand-font-family);
+  --font-weight: var(--solid-weight-800);
+  --font-size: var(--solid-size-7x);
+  --font-line-height: var(--solid-size-9x);
+  --font-letter-spacing: var(--solid-letter-spacing-100);
+  --font-cap-size-before: -0.3169em;
+  /* dependent on font size and line height */
+  --font-cap-size-after: -0.2549em;
+  /* dependent on font size and line height */
+  --font-style: initial;
+  --font-transform: initial;
+  --font-color: var(--brand-color-black);
+}
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Label"][data-variant="amount-medium" i]) {
+  --font-family: var(--brand-font-family);
+  --font-weight: var(--solid-weight-700);
+  --font-size: var(--solid-size-5x);
+  --font-line-height: var(--solid-size-7x);
+  --font-letter-spacing: var(--solid-letter-spacing-100);
+  --font-cap-size-before: -0.3741em;
+  /* dependent on font size and line height */
+  --font-cap-size-after: -0.3121em;
+  /* dependent on font size and line height */
+  --font-style: initial;
+  --font-transform: initial;
+  --font-color: var(--brand-color-black);
+}

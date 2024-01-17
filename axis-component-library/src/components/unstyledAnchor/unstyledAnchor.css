@@ -1,0 +1,11 @@
+@import "../../styling/nykredit.css";
+
+:host {
+  display: block;
+}
+
+.component {
+  color: inherit;
+  cursor: inherit;
+  text-decoration: inherit;
+}

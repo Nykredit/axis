@@ -1,0 +1,38 @@
+@import "../../styling/nykredit.css";
+
+:host {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+}
+
+.component {
+  display: contents;
+}
+
+.component svg {
+  display: block;
+}
+
+.component svg {
+  stroke-width: var(--icon-stroke-width);
+  width: var(--icon-size);
+  height: var(--icon-size);
+  --stroke: var(--icon-stroke, var(--icon-color-fallback));
+  --fill: var(--icon-fill, var(--icon-color-fallback));
+}
+
+.stroke svg {
+  stroke: var(--icon-color, var(--stroke));
+  fill: none;
+}
+
+.fill svg {
+  fill: var(--icon-color, var(--fill));
+  stroke: none;
+}
+
+.both svg {
+  fill: var(--icon-color, var(--fill));
+  stroke: var(--icon-color, var(--stroke));
+}

@@ -1,0 +1,47 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './checkbox.stories';
+
+<Meta title="SOLID/Checkbox" />
+
+# Checkbox Component
+
+A checkbox which can be used in a molecule with descriptive text
+
+<Canvas of={Stories.Example} />
+
+## Description
+
+a base checkbox that can be used in forms in combination with a label or other descriptive text. The checkbox has a hitbox which is considerably larger than the visual box and accompanying layout size.
+
+## Usage
+
+`<nk-checkbox></nk-checkbox>`
+
+## Usage notes
+
+### Do:
+
+- Use as part of a molecule that describes the purpose of the checkbox
+- Use for values that can be either true or false
+
+### Do not:
+
+- Use as a standalone element as it does not convey any information as to what value is being set
+- Do not use for values that can be either true, false or unknown
+
+## @API
+
+### Properties
+
+- value (boolean)
+- disabled (boolean)
+
+## Variants
+
+### Disabled False
+
+<Canvas of={Stories.DisabledFalse} />
+
+### Disabled True
+
+<Canvas of={Stories.DisabledTrue} />

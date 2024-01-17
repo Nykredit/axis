@@ -1,0 +1,37 @@
+/* FIELDBASE */
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="FieldBase"]) {
+  --spacing: var(--solid-spacing-3x); /*stack[variant=related]*/
+}
+
+/* Override the padding and margin for interaction element pill */
+:host([data-brand="Nykredit"][data-context="Pill"]),
+*[data-brand="Nykredit"][data-context="Pill"] {
+  --layout-margin-interaction-interaction: var(--spacing-8px);
+}
+
+/* Override the padding for card component */
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Card"][data-variant="body-spacing-6x"]),
+*[data-brand="Nykredit"][data-context~="Default" i][data-component="Card"][data-variant="body-spacing-6x"] {
+  --card-body-padding-x: var(--solid-spacing-6x);
+  --card-body-padding-y: var(--solid-spacing-6x);
+}
+
+:host([data-brand="Nykredit"][data-component="CurrencyInput"]),
+:host([data-brand="Nykredit"][data-component="Datalist"]),
+:host([data-brand="Nykredit"][data-component="DateInput"]),
+:host([data-brand="Nykredit"][data-component="EmailInput"]),
+:host([data-brand="Nykredit"][data-component="LookupInput"]),
+:host([data-brand="Nykredit"][data-component="NumberInput"]),
+:host([data-brand="Nykredit"][data-component="PhoneInput"]),
+:host([data-brand="Nykredit"][data-component="SelectInput"]),
+:host([data-brand="Nykredit"][data-component="TextInput"]),
+:host([data-brand="Nykredit"][data-component="TimeInput"]) {
+  --min-height: var(--solid-size-14x);
+  --max-height: var(--solid-size-14x);
+}
+
+:host([data-brand="Nykredit"][data-component="Textarea"]) {
+  --min-height: var(--solid-size-14x);
+  --padding-y: var(--solid-spacing-4x);
+}

@@ -1,0 +1,38 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './unorderedList.stories';
+
+<Meta title="SOLID/UnorderedList" />
+
+# UnorderedList Component
+
+An unordered list which can be used to display a list of text items
+
+<Canvas of={Stories.Default} />
+
+## Description
+
+This component present a list of the Unordered List Item component
+
+## Usage
+
+`<nk-list-unordered></nk-list-unordered>`
+
+## Usage notes
+
+### Do:
+
+- Use this component directly for illustrative purposes.
+
+### Do not:
+
+- The component should not be used for interaction purposes.
+
+## @API
+
+### Properties
+
+- vertical-space (string): the variant of the vertical stack
+
+### Design tokens
+
+- `--padding-left` - controls the padding left of the unordered list

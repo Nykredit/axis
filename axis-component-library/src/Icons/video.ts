@@ -1,0 +1,14 @@
+/* START AUTO-GENERATED FROM FIGMA */
+export const video = `<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+<g>
+<path d="M32 6.38197V25.618L20.5528 19.8944L21.4472 18.1056L30 22.382V9.61803L21.4472 13.8944L20.5528 12.1056L32 6.38197Z"/>
+<path d="M4 7C2.89543 7 2 7.89543 2 9V23C2 24.1046 2.89543 25 4 25H18C19.1046 25 20 24.1046 20 23V9C20 7.89543 19.1046 7 18 7H4ZM0 9C0 6.79086 1.79086 5 4 5H18C20.2091 5 22 6.79086 22 9V23C22 25.2091 20.2091 27 18 27H4C1.79086 27 0 25.2091 0 23V9Z"/>
+</g>
+<defs>
+<clipPath id="clip0_1401_1909">
+<rect/>
+</clipPath>
+</defs>
+</svg>`;
+/* https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/0ed35c4a-8fc3-42b0-a91f-ebd3129d6052 */
+/* END AUTO-GENERATED FROM FIGMA */

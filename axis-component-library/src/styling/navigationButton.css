@@ -1,0 +1,21 @@
+:host([data-brand="Nykredit"][data-component="NavigationButton"]) {
+  --padding: var(--solid-spacing-2x) var(--solid-spacing-4x);
+  --hover-bar-height: var(--solid-size-_5x);
+  --icon-color: var(--solid-text-primary);
+}
+
+:host([data-brand="Nykredit"][data-component="NavigationButton"]:hover) {
+  --hover-bar-color: var(--solid-accent-primary-500);
+}
+
+:host([data-brand="Nykredit"][data-component="NavigationButton"]:active) {
+  --hover-bar-color: var(--solid-accent-primary-500);
+}
+
+:host([data-brand="Nykredit"][data-component="NavigationButton"]:focus-within) {
+  --hover-bar-color: var(--solid-accent-primary-500);
+}
+
+:host([data-brand="Nykredit"][data-component="NavigationButton"][data-variant="icon-only"]) {
+  --padding: var(--solid-spacing-2x) var(--solid-spacing-3x);
+}

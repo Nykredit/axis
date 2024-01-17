@@ -1,0 +1,67 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './button.stories';
+
+<Meta title="SOLID/Button" />
+
+# Button Component
+
+Primary component for executing an action that does not result in page navigation
+
+<Canvas of={Stories.Example} />
+
+## Description
+
+The button element is the go-to component for executing an action when clicking. Such actions could be closing a modal, sending a form or adding/removing an element from a list.
+The button has 3 variants, primary, secondary and tertiary with diminishing visual weight.
+
+## Usage
+
+`<nk-button></nk-button>`
+
+## @API
+
+### Properties
+
+- label (`string`)
+- leadingicon (`string`)
+- variant (`filled`,`neutral`, `outline`, `ghost`)
+- trailingicon (`string`)
+- disabled (`boolean`)
+
+### Event handlers
+
+- click (CustomEvent) - Event fired when the button is clicked
+
+## Variations
+
+The Nykredit SOLID Design System contains 4 different button variants, with different visual weights.
+
+### Filled variant
+
+<Canvas of={Stories.Filled} />
+
+<Canvas of={Stories.FilledDisabled} />
+
+### Neutral variant
+
+neutral visual variant of the button
+
+<Canvas of={Stories.Neutral} />
+
+<Canvas of={Stories.NeutralDisabled} />
+
+### Outline variant
+
+Outline visual variant of the button
+
+<Canvas of={Stories.Outline} />
+
+<Canvas of={Stories.OutlineDisabled} />
+
+### Ghost variant
+
+Ghost visual variant of the button
+
+<Canvas of={Stories.Ghost} />
+
+<Canvas of={Stories.GhostDisabled} />

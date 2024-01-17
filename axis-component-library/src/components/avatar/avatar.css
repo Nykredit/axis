@@ -1,0 +1,19 @@
+@import "../../styling/nykredit.css";
+
+
+:host() {
+  display: block;
+}
+
+.component {
+  width: var(--graphic-size-avatar);
+  height: var(--graphic-size-avatar);
+  border-radius: 50%;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}

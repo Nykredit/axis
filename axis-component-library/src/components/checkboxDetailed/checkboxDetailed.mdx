@@ -1,0 +1,43 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './checkboxDetailed.stories';
+
+<Meta title="SOLID/CheckboxDetailed" />
+
+# CheckboxDetailed component
+
+This is the checkbox detailed component.
+
+<Canvas of={Stories.Default} />
+
+## Description
+
+A checkbox with a label next to it.
+
+## Usage
+
+`<nk-checkbox-item></nk-checkbox-item>`
+
+### Do:
+
+- use to allow the user to set a boolean value to be applied
+- Use for values which can be either true or false
+- Use a descriptive label that makes it clear what choice the user has to make
+
+### Do not:
+
+- Use for options that have more that two states (enabled, disabled)
+- use Checkboxes for actions that takes immediate effect. Checkboxes are for setting boolean values that are applied after clicking a button
+
+## @API
+
+### Properties
+
+- value (`boolean`)
+- disabled (`boolean`)
+- label (`string`)
+
+## Variants
+
+### Checkbox detailed plain
+
+<Canvas of={Stories.Plain} />

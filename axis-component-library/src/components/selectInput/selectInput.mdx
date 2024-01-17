@@ -1,0 +1,47 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './selectInput.stories';
+
+<Meta title="SOLID/SelectInput" />
+
+# SelectInput Component
+
+Select input field
+
+<Canvas of={Stories.Example} />
+
+## Usage
+
+`<nk-select-input></nk-select-input>`
+
+## Description
+
+Replace this with a short description of why this component exists and what it does.
+
+## Usage notes
+
+### Do:
+
+-
+
+### Do not:
+
+-
+
+## Child components
+
+This component is a molecule consisting of the following components:
+
+- `inputBase`
+
+## @API
+
+### Properties
+
+- value (string)
+- options(`{label: string, value:string}[]`)
+- label (string)
+- predefinedonly (boolean)
+
+### Event handlers
+
+- change (value (string)) - Event handler for listening for changes in value

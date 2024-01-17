@@ -1,0 +1,61 @@
+@import "../../styling/nykredit.css";
+
+:host {
+  display: contents;
+}
+
+.component {
+  border: none;
+  width: 100%;
+  background-color: var(--background);
+  outline: none;
+  padding: 0;
+  margin: 0;
+  height: var(--font-line-height);
+  line-height: var(--font-line-height);
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  /* 
+    The Select element has the appearance: menulist which means we cannot override a default internal padding, causing the selected value label to shift x pixels to the right on Edge/Chrome. 
+    The offset appears to be stable across browsers, at least on Desktop. Tested on Windows in Edge(Chromium)/Chrome/Firefox/Brave.
+    This doesn't work in Safari / IOS
+  */
+  margin-left: -4px;
+  color: var(--font-color);
+}
+
+/*
+validates if IOS. The @supports CSS at-rule lets you specify CSS declarations that depend on a browser's support for CSS features.
+The -apple-system-body is a font property available on IOS and therefore supported.
+*/
+@supports (font: -apple-system-body) and (-webkit-appearance: none) {
+  .component {
+    margin-left: 0px;
+  }
+}
+
+.capsize {
+  width: 100%;
+}
+
+.capsize:before {
+  content: "";
+  display: table;
+  opacity: 0;
+}
+.capsize:after {
+  content: "";
+  display: table;
+  opacity: 0;
+}
+.capsize:before {
+  margin-bottom: var(--font-cap-size-before);
+}
+
+.capsize:after {
+  margin-top: var(--font-cap-size-after);
+}
+
+option {
+  background-color: var(--layout-color-page);
+}

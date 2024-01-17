@@ -1,0 +1,58 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './emailInput.stories';
+
+<Meta title="SOLID/EmailInput" />
+
+# EmailInput Component
+
+Email input field
+
+<Canvas of={Stories.Example} />
+
+## Description
+
+This EmailInput molecule behaves like a text input field of type "email".
+
+## Usage
+
+`<nk-email-input></nk-email-input>`
+
+### Do:
+
+- Use this component whenever the user should input an email address
+
+### Do not:
+
+- Use this component to input any other type of data
+
+## Child components
+
+This component is a molecule consisting of the following components:
+
+- `inputBase`
+- `textInputBase`
+
+## @API
+
+### Properties
+
+- label (string)
+- value (string)
+- variant (`default`, `inline`)
+- width (string)
+- maxLength (string)
+- labelassistive (string)
+
+### Event handlers
+
+- change (ChangeEventArgs) - Event handler for listening for changes in value
+
+## Variants
+
+### Default
+
+<Canvas of={Stories.Default} />
+
+### Inline
+
+<Canvas of={Stories.Inline} />

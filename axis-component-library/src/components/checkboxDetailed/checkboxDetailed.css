@@ -1,0 +1,28 @@
+@import "../../styling/nykredit.css";
+
+:host {
+  display: contents;
+}
+
+.component {
+  display: flex;
+  align-items: center;
+}
+
+.component > * {
+  flex: 1 1 auto;
+}
+
+.component > * + * {
+  margin-left: var(--layout-margin-interaction-interaction);
+}
+
+.label.container > *:not(:last-child) {
+  margin-bottom: var(--layout-margin-interaction-interaction);
+}
+
+.stack-input {
+  height: 100%;
+  flex: 0 0 auto;
+  align-self: stretch;
+}

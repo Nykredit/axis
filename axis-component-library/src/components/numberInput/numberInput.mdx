@@ -1,0 +1,51 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './numberInput.stories';
+
+<Meta title="SOLID/NumberInput" />
+
+# numberInput Component
+
+Number input field
+
+<Canvas of={Stories.Example} />
+
+## Usage
+
+`<nk-number-input></nk-number-input>`
+
+## Description
+
+Replace this with a short description of why this component exists and what it does.
+
+## Usage notes
+
+### Do:
+
+-
+
+### Do not:
+
+-
+
+## Child components
+
+This component is a molecule consisting of the following components:
+
+- `inputBase`
+
+## @API
+
+### Properties
+
+- value (string)
+- maxLength (number)
+
+### Event handlers
+
+- change (ChangeEventArgs) - Event handler for listening for changes in value
+
+## Variations
+
+### Readonly
+
+<Canvas of={Stories.Disabled} />

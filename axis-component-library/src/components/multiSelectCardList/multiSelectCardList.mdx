@@ -1,0 +1,45 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './multiSelectCardList.stories';
+
+<Meta title="SOLID/MultiSelectCardList" />
+
+# Multi select card list
+
+Demo component showing how to use multi select card list with checkbox
+
+<Canvas of={Stories.Default} />
+
+## Description
+
+This component was created in order to be able to select a card with both image and content. All content is created in
+the children array since the content inside each card can differ.
+
+## Usage
+
+`<nk-multi-select-card-list></nk-multi-select-card-list>`
+
+## Child components
+
+This component is a componsition of the following
+
+- nk-card-select-multi
+
+## @API
+
+### Properties for card
+
+- values (`array`)
+
+### Event handlers
+
+- handleChangeSlot: When the slot is rendered, the actionvalue of item card item needs to be set to the correct value.
+- handleChange: When a card is clicked it returns the event. This event includes the cardid which is used to toggle whether
+  or not the card is selected. Afterwards update each slots actionvalue.
+
+## Variations
+
+- checkbox
+
+### With title
+
+<Canvas of={Stories.WithTitle} />

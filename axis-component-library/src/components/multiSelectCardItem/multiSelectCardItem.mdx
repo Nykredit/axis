@@ -1,0 +1,52 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './multiSelectCardItem.stories';
+
+<Meta title="SOLID/MultiSelectCardItem" />
+
+# Multi select card item
+
+Demo component showing how to use multi select card item
+
+<Canvas of={Stories.Default} />
+
+## Description
+
+This component was created in order to be able to select a card with both image and content.
+
+## Usage
+
+`<nk-card-select-multi></nk-card-select-multi>`
+
+## Child components
+
+This component is a componsition of the following
+
+- card-select
+
+## @API
+
+### Properties
+
+- variant (`string`)
+- imageurl (`string`)
+- imagealttext (`string`)
+- actiontitle (`string`)
+- actionlabel (`string`)
+- actionvalue (`boolean`)
+- cardid (`string`)
+
+### Event handlers
+
+- Add a onchange handler on `card-select`. The handler returns the target and actionvalue at it's current state.
+
+## Variations
+
+- checkbox
+
+### With title
+
+<Canvas of={Stories.WithTitle} />
+
+### With custom height and image fit
+
+<Canvas of={Stories.WithCustom} />

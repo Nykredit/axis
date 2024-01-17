@@ -1,0 +1,72 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './label.stories';
+
+<Meta title="SOLID/Label" />
+
+# Label Component
+
+single line label component
+
+<Canvas of={Stories.Example} />
+
+## Description
+
+A label is a text component that does not wrap to multiline. Instead it clips the label and adds an ellipsis. For completeness, a label will always have a tooltip with the full label.
+
+## Usage
+
+`<nk-label></nk-label>`
+
+## @API
+
+### Properties
+
+- text (string)
+- variant ('default'|'help')
+- multiline (boolean) (deprecated)
+
+### CSS-overrides
+
+- var(--label-color) - overrides the default color of the label. Useful for example in buttons to override color based on button state.
+
+## Variations
+
+Short summary of the variation options
+
+### Default
+
+### Button text
+
+Below is an example of a button label, a styling that is used in the button component.
+
+<Canvas of={Stories.ButtonField} />
+
+### Field text
+
+Below is an example of a field label. Field labels are used for form fields.
+
+<Canvas of={Stories.FieldLabel} />
+
+### Nav-button text
+
+Below is an example of a nav-button label. Nav-button labels are only used in the construction of navigation buttons.
+
+<Canvas of={Stories.NavLabel} />
+
+### Amount-xlarge text
+
+Below is an example of an amount-xlarge label. Amount-xlarge labels are only used in the construction of amount components.
+
+<Canvas of={Stories.AmountXLabel} />
+
+### Amount-large text
+
+Below is an example of an amount-large label. Amount-large labels are only used in the construction of amount components.
+
+<Canvas of={Stories.AmountLargeLabel} />
+
+### Amount-medium text
+
+Below is an example of an amount-medium label. Amount-medium labels are only used in the construction of amount components.
+
+<Canvas of={Stories.AmountMediumLabel} />

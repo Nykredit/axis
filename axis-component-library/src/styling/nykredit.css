@@ -1,0 +1,504 @@
+@import "./accordion.css";
+@import "./button.css";
+@import "./checkbox.css";
+@import "./deprecated.css";
+@import "./divider.css";
+@import "./elevation.css";
+@import "./forms.css";
+@import "./heading.css";
+@import "./iconButton.css";
+@import "./icons.css";
+@import "./inputBase.css";
+@import "./label.css";
+@import "./navigationButton.css";
+@import "./paragraph.css";
+@import "./stack.css";
+@import "./unorderedList.css";
+@import "./cardSelect.css";
+@import "./image.css";
+@import "./card.css";
+@import "./assistiveText.css";
+@import "./tag.css";
+@import "./radioButton.css";
+@import "./pill.css";
+
+:host * {
+  box-sizing: border-box;
+}
+
+:host {
+  display: block;
+}
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-root="true"]),
+*[data-brand="Nykredit"][data-context~="Default" i][data-root="true"],
+/* Temporarily allow for data-nested attribute */
+:host([data-brand="Nykredit"][data-context~="Default" i][data-nested="false"]),
+*[data-brand="Nykredit"][data-context~="Default" i][data-nested="false"] {
+  /* Manually added SOLID Foundation Design Tokens that are not yet auto loaded from Figma */
+
+  --brand-font-family: "Open Sans", Arial, sans-serif;
+
+  --todo: initial; /* Placeholder token for values yet to be defined*/
+
+  --dp: calc(1rem / 16);
+
+  /* START AUTO-GENERATED FROM FIGMA */
+  --nyk-accent-secondary-400: #81d9e4;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/70a7fd4b-46ba-4428-af5f-1ea6d57b2fe3*/
+  --solid-accent-primary-100: #feb9c5;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/7e03be57-3bcb-4346-8b65-650c71ce00db*/
+  --solid-accent-primary-200: #fd91a5;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/865ef238-0398-495b-a0b8-53e0f3fb12f6*/
+  --solid-accent-primary-300: #fc6e89;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/519709f6-24d9-4a78-a307-391c163fc3dc*/
+  --solid-accent-primary-400: #fc4a6b;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/25018837-323a-41a0-a2fd-d033db7d63cb*/
+  --solid-accent-primary-50: #fedce3;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/86cef66e-2ac4-4620-be5c-30510b181435*/
+  --solid-accent-primary-500: #fb264e;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/5ad1da59-067a-4e31-b7f3-afc8dcd8ec14*/
+  --solid-accent-primary-600: #ec042e;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/cbfb9009-3c6d-4e73-9535-3b6cc7302492*/
+  --solid-accent-primary-700: #bf0325;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/47d1dd07-58e8-4916-8ad1-3f29efe0d61a*/
+  --solid-accent-primary-800: #8c031c;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/5f0d3fb3-fe1e-4876-8b83-65e6e0a3dc5a*/
+  --solid-accent-primary-900: #5f0213;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/14e81c6d-736f-4676-bc07-55f37cfdc7cf*/
+  --solid-accent-secondary-100: #cdeff4;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/241016e7-7e96-4953-858c-ffa7b2160504*/
+  --solid-accent-secondary-200: #b3e8ef;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/45a70bec-fab7-4902-b8d4-eb8eb75c353c*/
+  --solid-accent-secondary-300: #99e1ea;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/d4c16e4a-857c-4947-af56-2349e83eebd4*/
+  --solid-accent-secondary-50: #e6f8fa;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/9e5af46b-6f7e-45c2-b271-58eca84fbb00*/
+  --solid-accent-secondary-500: #68d2df;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/1a4f7e6d-c3f9-4694-a30c-a92cde103ae7*/
+  --solid-accent-secondary-600: #39c3d5;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/e882a8d9-4e07-49a9-8a6c-8646a37df7e3*/
+  --solid-accent-secondary-700: #26a4b5;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/d4c667a9-78ab-467d-bdc6-5bbaaf5af23c*/
+  --solid-accent-secondary-800: #1d7a87;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/4b1b2475-dd42-4cbc-abe2-349b7d7f97bb*/
+  --solid-accent-secondary-900: #135058;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/8a033809-0e65-4b51-990c-2c4a889aea5b*/
+  --solid-action-primary-100: #c3c7e0;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/003b03c1-d663-4fae-b4ff-e40218e204c4*/
+  --solid-action-primary-200: #a5abd0;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/e477aba3-a2a6-4d68-ac01-f260b4b71bba*/
+  --solid-action-primary-300: #878fc1;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/10796cef-2bb8-489a-ad9a-00ba1ed1377e*/
+  --solid-action-primary-400: #6972b1;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/c7412ee6-a09f-4f75-b901-56981e4303ff*/
+  --solid-action-primary-50: #e1e3ef;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/bb867c64-2402-4e7b-940f-f8db9ee3158a*/
+  --solid-action-primary-500: #4b56a1;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/e8b795e9-ec81-4edb-b40a-601e5f18094a*/
+  --solid-action-primary-600: #2d3a92;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/1cb456df-aba6-4d9e-a9f6-d821cfd29cc8*/
+  --solid-action-primary-700: #0f1e82;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/9f3ace82-0b5a-4d56-b2c5-e69f506947e7*/
+  --solid-action-primary-800: #0b1466;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/ad7c4d2a-78f9-43a2-b2d4-f687cef1e927*/
+  --solid-action-primary-900: #07094a;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/7c1e3777-cd8a-4801-9f09-53d63462a978*/
+  --solid-alignment-center: Center;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/9cec8c90-6868-484e-85d3-ca2bad0379b6*/
+  --solid-alignment-left: Left;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/88eb6104-1887-47d8-bf54-8a103d3ce9d0*/
+  --solid-alignment-right: Right;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/d5b85e90-2cc1-4ed2-aa68-3f262ebe5e65*/
+  --solid-body-large: large;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/3023f41b-85ba-4aa6-9afd-623ef521aa3e*/
+  --solid-body-large-bold: large-bold;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/c4bbec7c-2460-4b19-9e74-c9b20f145d0b*/
+  --solid-body-large-xbold: large-xbold;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/37b9e77b-9039-4fbf-bb93-b4fe92b22bd0*/
+  --solid-body-medium: medium;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/29eaed47-5081-4dba-b885-6383409074ae*/
+  --solid-body-medium-bold: medium-bold;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/2ce7eeb0-7988-4f21-a6a7-5fbe87cad0b7*/
+  --solid-body-small: small;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/fe34c63c-6481-4024-995a-1726cd2c75b0*/
+  --solid-body-small-bold: small-bold;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/e2238945-a793-4fba-a141-951179627580*/
+  --solid-body-xlarge-xbold: x-large-xbold;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/11c1472a-f1e1-4b05-9265-ca220e5c62e8*/
+  --solid-border-dash: dash;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/72a90ea9-ff88-4b72-b971-2dfa45c5be28*/
+  --solid-border-large: var(--solid-size-1x);
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/32194b07-11d8-4547-90d4-70bcc88ae3f5*/
+  --solid-border-medium: var(--solid-size-_5x);
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/d21a519c-e447-43d4-8134-5faf4ab9eefb*/
+  --solid-border-small: var(--solid-size-_25x);
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/6db8b4f6-06c7-49c9-9183-f4861cf7f7c8*/
+  --solid-border-solid: solid;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/06503a06-5b32-4fe0-9bfe-18e6aab5b562*/
+  --solid-button-text-medium: medium;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/55c9d096-4c8e-493d-b7c1-342e79d064e9*/
+  --solid-category-01-100: #fff1cc;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/bb369b1c-a99d-4a07-983a-c9347cfd8eb6*/
+  --solid-category-01-200: #ffe9b2;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/fbb36e88-5c47-48c4-9159-69cec73e4011*/
+  --solid-category-01-300: #ffe299;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/eb473216-98cb-438e-8c45-474c607c43b7*/
+  --solid-category-01-400: #ffdb80;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/c13aa715-f2b3-41fb-85e3-ea8459aaf65b*/
+  --solid-category-01-50: #fff8e6;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/474f39e0-501e-417c-9c38-1ad3cd986225*/
+  --solid-category-01-500: #ffd568;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/265755d0-3ee3-468d-8c36-475b92052bb2*/
+  --solid-category-01-600: #ffc42e;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/b4cf1bcb-c32a-4281-bfca-0dce0af61b76*/
+  --solid-category-01-700: #f0ac00;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/0609d6cd-f8c5-4c17-9f33-b64d76c7581c*/
+  --solid-category-01-800: #b28000;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/0e182f32-3f12-4d38-9c32-6b0d05da714a*/
+  --solid-category-01-900: #7a5800;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/a22de62d-7bea-4e31-ba38-28b607207555*/
+  --solid-category-02-100: #ffe5cc;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/47321739-7a37-4ea1-9777-f516d966c728*/
+  --solid-category-02-200: #ffd7b2;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/bab5d859-a008-493f-9819-d7b61069ec47*/
+  --solid-category-02-300: #fec895;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/999e789e-5229-4ca5-87a1-5a964c2e77a9*/
+  --solid-category-02-400: #febb7c;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/79812f14-097a-4c6b-af3b-6cc89b3e5e06*/
+  --solid-category-02-50: #fff2e5;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/ce17d75a-bc30-4c3f-9bd1-c2e373fd474b*/
+  --solid-category-02-500: #fead63;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/eeb53508-7d81-404f-b639-278860ccf12e*/
+  --solid-category-02-600: #fe902a;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/35f8fb95-7c0c-46ca-83fb-c17c8834464e*/
+  --solid-category-02-700: #e97101;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/d0412156-49ba-40a0-89b0-b5766084c71e*/
+  --solid-category-02-800: #b25601;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/7eb9a7ae-1576-4bd1-9d8d-57cdc68c11cd*/
+  --solid-category-02-900: #743901;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/fe369963-cbbc-436c-ae12-c9fdabf938fa*/
+  --solid-category-03-100: #c3e9e1;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/1d77baa5-a6d8-4ca4-9ccd-aa558dba7714*/
+  --solid-category-03-200: #a5dfd2;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/f14c0c1a-9e79-49dc-b6e3-267e7a6a64dc*/
+  --solid-category-03-300: #84d2c1;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/6f4dc36a-a28f-44e4-8ecc-aa5a757ba936*/
+  --solid-category-03-400: #86d2c2;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/803c93e9-528a-435f-8529-0041190f464f*/
+  --solid-category-03-50: #e1f4f0;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/3f746be8-6eb9-4965-9e6f-086270903fae*/
+  --solid-category-03-500: #49bca3;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/f6e8062f-4023-4732-b131-4b3674a4007c*/
+  --solid-category-03-600: #3ba08a;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/f4ed487d-caf5-4857-8706-23cafad9a90c*/
+  --solid-category-03-700: #2f7f6d;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/039b67e5-2c47-4932-a4e2-012614c22093*/
+  --solid-category-03-800: #225d50;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/38173ea9-338e-4c28-b603-200329f1706b*/
+  --solid-category-03-900: #174037;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/7368aa2d-0390-4ca1-9a3e-2070209cfb1e*/
+  --solid-category-04-100: #bfdaf3;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/14dfdb73-f65f-4ef8-b29a-81a56bd5e149*/
+  --solid-category-04-200: #a0c8ee;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/7821dcbb-bd82-46a3-b1dd-09c9aa842a1d*/
+  --solid-category-04-300: #82b7e8;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/14bf6659-92d2-4778-95f1-c358ffd60508*/
+  --solid-category-04-400: #60a3e2;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/26275fa3-a66f-44a6-9d42-f4dfe89064ba*/
+  --solid-category-04-50: #e1eef9;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/e9e07e05-0bdc-4531-aab1-a5f089a6e414*/
+  --solid-category-04-500: #4192dc;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/d2e484b1-cc2a-426e-a961-5c9610530342*/
+  --solid-category-04-600: #257bcb;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/e0b55da3-0872-4412-a5be-18207af7d0c9*/
+  --solid-category-04-700: #1e609f;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/da320631-5962-44a5-9851-c1a2064f67c5*/
+  --solid-category-04-800: #164979;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/ce3eb4bf-5ca6-41da-a643-d98d43bc08d8*/
+  --solid-category-04-900: #103251;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/11c5eb6d-3230-4b3b-ba8e-7f605f3cd900*/
+  --solid-category-05-100: #d7c8e0;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/558dc066-2f79-48ce-acf5-1a2806c1a818*/
+  --solid-category-05-200: #c3add1;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/51ed245b-474b-470f-b229-d9d498d51fb1*/
+  --solid-category-05-300: #ae8fc1;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/b496f976-b90d-4dea-9869-fe5e30983c83*/
+  --solid-category-05-400: #9b75b3;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/7ea77ff6-38e9-4445-a476-d3db327cfca9*/
+  --solid-category-05-50: #ece5f1;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/90f7130f-d33a-4720-bb50-9fcde538ad62*/
+  --solid-category-05-500: #875ba3;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/360c2261-85df-4767-ae3b-b487c750458a*/
+  --solid-category-05-600: #724d89;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/d864f416-3914-46dd-b243-6c94c8e49062*/
+  --solid-category-05-700: #5a3d6c;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/cddc29c7-21bd-4b3b-9569-d1885fa2f9c5*/
+  --solid-category-05-800: #442e52;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/8e6c0464-26b8-4423-9843-a97cf53fbed9*/
+  --solid-category-05-900: #2c1d35;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/7a9f3246-15e6-4316-b90c-50ec075c4426*/
+  --solid-category-06-100: #c1e6d3;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/4133343b-d52a-4ea9-beb9-e92a379b7566*/
+  --solid-category-06-200: #99d6b7;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/74f92071-011c-4ed7-b050-3857e57e1ee8*/
+  --solid-category-06-300: #6cc697;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/49f0f848-ba41-4696-846f-cb33b79a39de*/
+  --solid-category-06-400: #45ba7e;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/cea02964-7665-4004-ac2e-e4debd830033*/
+  --solid-category-06-50: #e5f5ed;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/bacb2506-2c0b-42e2-b4f8-9f1dc2e55dd0*/
+  --solid-category-06-500: #0fae5c;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/f1bd081b-7c69-4cae-a3e0-41e0d0e0a378*/
+  --solid-category-06-600: #009f4d;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/ba7d043d-7267-49a3-959b-aa0b6477d4fb*/
+  --solid-category-06-700: #008f45;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/cf46a06d-64a9-4e3a-9d02-c277d32994b1*/
+  --solid-category-06-800: #007a3b;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/7cbb7b2a-dce8-4eb2-b98c-f218f92b5f98*/
+  --solid-category-06-900: #005c2c;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/cb1bcb6a-38c1-411e-b340-1fa9976a3ab8*/
+  --solid-color-cta: #0f1e82;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/9f3ace82-0b5a-4d56-b2c5-e69f506947e7*/
+  --solid-color-error: #8c031c;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/5f0d3fb3-fe1e-4876-8b83-65e6e0a3dc5a*/
+  --solid-corner-fully: 50%;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/f063afcb-9b71-4395-b4de-fa87960f0b97*/
+  --solid-corner-medium: var(--solid-size-2x);
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/79c85d44-94a0-43a8-8e4b-705ff67735ea*/
+  --solid-corner-none: var(--solid-size-0x);
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/1b83e66b-087f-439e-b516-ccc2242cf077*/
+  --solid-corner-small: var(--solid-size-1x);
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/7c8ca41b-1a5b-433d-bbd0-9abdd123b00e*/
+  --solid-corner-tiny: var(--solid-size-_5x);
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/faadc8a3-d052-469c-a2c2-32b3fef8fbfe*/
+  --solid-heading-huge: huge;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/d62f945e-56a0-43f2-8a63-4ea8131506c6*/
+  --solid-heading-large: large;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/df8a20e4-8fd3-4d4c-afde-d210a47ed4ac*/
+  --solid-heading-medium: medium;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/94681c85-1644-480a-b86c-918cf9d0f628*/
+  --solid-heading-small: small;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/210e736d-dc40-4478-93a9-4d0a74d10dc8*/
+  --solid-heading-tiny: tiny;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/5c1052ed-2f19-4f78-809f-b0d58b63a952*/
+  --solid-heading-xlarge: x-large;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/e8fd5261-c04f-457f-9934-3ccce9440711*/
+  --solid-heading-xsmall: x-small;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/8bdcd2cb-526f-4780-b883-c8270395aff3*/
+  --solid-letter-case-none: As typed;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/82fdc5fc-5ca4-477a-8154-570550f13f36*/
+  --solid-letter-case-upper: UPPERCASE;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/2384a68c-a4dc-45b5-ab3f-f5b40be147eb*/
+  --solid-letter-deco-underline: Underline;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/7f68272e-92a5-4c26-a0a7-b51a5f12eaaa*/
+  --solid-letter-spacing-100: 0.01em;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/ce81c983-3647-447c-8945-785b5d8bd840*/
+  --solid-letter-spacing-200: 0.02em;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/96201f5e-0910-44f4-a795-98b2360380c8*/
+  --solid-letter-spacing-350: 0.035em;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/753f5f4e-3e4a-4879-9742-1f33701adca7*/
+  --solid-letter-spacing-400: 0.04em;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/6d613141-173c-494f-8d7f-19baab49167e*/
+  --solid-letter-spacing-850: 0.085em;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/5b83374f-48be-4eb4-b555-95e86b2086d2*/
+  --solid-letter-spacing-none: 0em;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/492f9342-7f92-4dbc-b5df-b6fe1add3257*/
+  --solid-neutral-01-100: #f8f7f6;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/b1c4f852-24eb-4e09-9ec0-0d71390e1e55*/
+  --solid-neutral-01-200: #f6f4f3;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/3f105743-74d4-4d4e-853d-d3680dec7909*/
+  --solid-neutral-01-300: #f2efed;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/79548c06-4c7b-44f6-9514-0405d417d88b*/
+  --solid-neutral-01-400: #f0ecea;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/b649d007-ef35-4d3f-ab69-039b51a11d34*/
+  --solid-neutral-01-50: #fdfcfc;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/22d9dc28-de99-47eb-beb9-043b298123b1*/
+  --solid-neutral-01-500: #ede8e6;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/f51a2e2d-40a4-4632-a836-872dac0582f4*/
+  --solid-neutral-01-600: #ccbeb8;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/0e2754f9-d5dd-4021-b1cf-6ce4b92f0e2e*/
+  --solid-neutral-01-700: #ac948b;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/5a32c699-9402-405b-9797-019b9100def0*/
+  --solid-neutral-01-800: #886d63;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/adaebf25-1ddc-4eab-9782-8260de5a4425*/
+  --solid-neutral-01-900: #5c4942;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/2689821b-0af9-4492-ac7c-2cdfd0baad09*/
+  --solid-neutral-02-100: #eeebe8;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/4ce44b37-c917-434b-9131-e8e637b9da8e*/
+  --solid-neutral-02-200: #e6e1db;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/b329da35-f519-41cc-ae14-8fefb3383c7c*/
+  --solid-neutral-02-300: #ddd7d0;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/c5c00e84-d443-41b2-8045-24f0eed6e1ce*/
+  --solid-neutral-02-400: #d4cdc4;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/0f100f75-4777-4848-b10e-12252363ead6*/
+  --solid-neutral-02-50: #f7f5f3;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/52c13faf-d3ab-4b11-8d05-f222eddc6bff*/
+  --solid-neutral-02-500: #ccc3b9;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/7825d803-9221-47d9-bbb3-f71c1e08ae8d*/
+  --solid-neutral-02-600: #b2a495;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/54ab3435-440e-4109-b274-4e1f8f0fd1f0*/
+  --solid-neutral-02-700: #96836e;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/6290027b-d700-43ed-8530-e5e9bdf16359*/
+  --solid-neutral-02-800: #706251;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/51838a64-c388-42ac-a0cf-116acc74e00d*/
+  --solid-neutral-02-900: #494036;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/ae9dcaac-58ec-47cf-9f43-95d30d1b474a*/
+  --solid-neutral-03-100: #dbd9d7;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/73962ec6-9ed6-4605-be1d-f2d93a7bd5c0*/
+  --solid-neutral-03-200: #cac7c4;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/ebe415f4-b7e4-4cfa-9557-8e3f8ea77ef5*/
+  --solid-neutral-03-300: #b8b2ad;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/1596616a-7f6f-407d-b596-91ed48ff003c*/
+  --solid-neutral-03-400: #a6a19b;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/69298b84-4be2-4592-bbe5-4b870abf15c9*/
+  --solid-neutral-03-50: #eeedec;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/14a2a7c9-330f-4dab-a8bb-0f401a5e35d0*/
+  --solid-neutral-03-500: #948d86;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/f2725afa-94b5-49e5-ad17-d25631689e76*/
+  --solid-neutral-03-600: #7c756e;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/780ec6cd-6213-43b8-a715-249d73c6d1e2*/
+  --solid-neutral-03-700: #645e59;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/63dafdf0-401d-40e9-9512-816f5621eab0*/
+  --solid-neutral-03-800: #4c4743;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/8a7d59e8-0ae2-4b6d-bf7c-076cad92aae3*/
+  --solid-neutral-03-900: #312e2b;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/4b796d7e-41b1-4bc2-8e0d-a9d15c842868*/
+  --solid-shadow-surface-01: 0px 1px 1px rgba(19, 19, 19, 0.14), 
+    0px 2px 1px rgba(19, 19, 19, 0.12), 0px 1px 3px rgba(19, 19, 19, 0.2);
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/f8b5c45b-556d-44e0-803b-c73b57dd3f04*/
+  --solid-shadow-surface-02: 0px 2px 2px rgba(0, 0, 0, 0.8),
+    0px 3px 1px rgba(0, 0, 0, 0.8), 0px 1px 5px rgba(0, 0, 0, 0.12);
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/a3602647-fc96-453b-a021-1dd19ee7b06e*/
+  --solid-shadow-surface-04: 0px 4px 5px rgba(0, 0, 0, 0.8),
+    0px 1px 10px rgba(0, 0, 0, 0.8), 0px 2px 4px rgba(0, 0, 0, 0.12);
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/b86942ea-ea62-475f-9dc2-8c62e2fd4524*/
+  --solid-shadow-surface-08: 0px 8px 10px rgba(0, 0, 0, 0.8),
+    0px 3px 14px rgba(0, 0, 0, 0.8), 0px 5px 5px rgba(0, 0, 0, 0.12);
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/8eb6b7ff-5511-4a1f-9d9d-10f773a75aad*/
+  --solid-shadow-surface-12: 0px 12px 170px rgba(0, 0, 0, 0.8),
+    0px 5px 22px rgba(0, 0, 0, 0.8), 0px 7px 8px rgba(0, 0, 0, 0.12);
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/3e13903c-1321-4f34-b812-462399f6bcd3*/
+  --solid-shadow-surface-16: 0px 16px 24px rgba(0, 0, 0, 0.8),
+    0px 6px 30px rgba(0, 0, 0, 0.8), 0px 8px 10px rgba(0, 0, 0, 0.12);
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/5f0fe159-54c9-43a5-ae67-4c5d5544e2d5*/
+  --solid-shadow-surface-24: 0px 24px 38px rgba(0, 0, 0, 0.8),
+    0px 9px 46px rgba(0, 0, 0, 0.8), 0px 11px 15px rgba(0, 0, 0, 0.12);
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/50246515-707c-469d-8c0a-9e2d6956d058*/
+  --solid-size-0x: 0px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/1c2141ab-7974-49c4-8b54-020a4ab62ecb*/
+  --solid-size-10x: 40px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/cca18ede-0081-4f85-9dfa-8fdb69e59250*/
+  --solid-size-11x: 44px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/4f431bca-5381-4a28-857d-31587fead244*/
+  --solid-size-12x: 48px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/4bd4500b-508a-4621-8421-5edfe1861b7a*/
+  --solid-size-13x: 52px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/3f22c4df-34a9-4aa5-9b63-d531a3964fb9*/
+  --solid-size-14x: 56px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/e86acf65-9086-4f28-b166-25debaa88b72*/
+  --solid-size-15x: 60px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/73dc09ba-a51f-4151-8063-20e5ca5888aa*/
+  --solid-size-16x: 64px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/a77d4be4-3c0f-491a-8b6e-2d89ec60c228*/
+  --solid-size-17x: 68px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/611be8f8-fd78-4c41-8c14-3dbdfe37aade*/
+  --solid-size-18x: 72px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/ba18dbd2-4cfc-4e1c-97ad-bd6353ed0bc5*/
+  --solid-size-19x: 76px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/78e3e25d-3da7-4b03-85a7-ee28d447e712*/
+  --solid-size-1x: 4px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/92002940-9522-45ee-b97e-72ae464a917d*/
+  --solid-size-20x: 80px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/5c7a1712-2349-42ea-979a-107263ff7846*/
+  --solid-size-2x: 8px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/a8e3bbb9-165c-4761-8e54-026f4c3e5682*/
+  --solid-size-3_5x: 14px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/798bffa2-0994-45de-b3fb-f91c7906dc86*/
+  --solid-size-3x: 12px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/61f64b8d-664d-4110-9ec6-ebc39a53b69e*/
+  --solid-size-4_5x: 18px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/740347d9-eae6-4f90-93fd-d089a0815e81*/
+  --solid-size-4x: 16px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/11847746-a750-4227-b2b5-0bce1d3c987e*/
+  --solid-size-5_5x: 22px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/385577ca-521b-4fc5-816d-40ffdd136688*/
+  --solid-size-5x: 20px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/43c79d83-d609-4ce7-bc1c-9009652b87d9*/
+  --solid-size-6_5x: 26px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/9e39da18-a119-45e5-a0e7-0475295cd8a3*/
+  --solid-size-6x: 24px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/f040b90a-1fa9-4ce0-97de-59e6c13f5d5a*/
+  --solid-size-7x: 28px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/643a1d4a-1764-4c6f-8756-a00b86582c01*/
+  --solid-size-8_5x: 34px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/b5fe1eae-eb57-470d-b04e-bf5a21e4dbf2*/
+  --solid-size-8x: 32px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/86f98cc2-428b-48a8-a452-345833c23514*/
+  --solid-size-9x: 36px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/5dcc6672-3ed3-4d80-996a-0d72016fb34b*/
+  --solid-size-_25x: 1px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/82d740d2-b469-450b-b8df-bb1257dcff35*/
+  --solid-size-_5x: 2px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/0f76e8ad-8493-4fbd-a847-078393598f89*/
+  --solid-size10x: 40px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/8c6c415e-1e69-4caa-a390-dcc88dd63473*/
+  --solid-size7x: 28px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/899549ba-2a8e-4717-a642-28d272bc782c*/
+  --solid-spacing-10x: 40px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/f6e67fb7-dfc1-4da9-8542-f81d5b0912b2*/
+  --solid-spacing-12x: 48px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/7ce5dcdc-22ff-44e6-b001-f8ba16681eee*/
+  --solid-spacing-16x: 64px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/ffad1f13-845a-46c2-8b28-63e2158be431*/
+  --solid-spacing-1x: 4px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/5bf53195-15fa-4539-8873-8c36eea0d411*/
+  --solid-spacing-20x: 80px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/bceba14b-4154-4c2e-914a-95cb5f03bf1b*/
+  --solid-spacing-2x: 8px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/b7131014-3144-46b7-a097-1fa53800be0c*/
+  --solid-spacing-3x: 12px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/61db5948-58cd-4f3b-ada8-61242910e012*/
+  --solid-spacing-4x: 16px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/3d52bcfa-1b28-42d3-82ff-344f29d8e097*/
+  --solid-spacing-6x: 24px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/b1c65dea-b961-4a42-ba1a-abb827e0aabf*/
+  --solid-spacing-8x: 32px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/69cc5e5e-00f8-422b-b357-7e222feb5df9*/
+  --solid-spacing-none: 0px;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/efe239ae-464b-4948-93ef-2c42f0d7d2c3*/
+  --solid-surface-100-light: #ffffff;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/31866d93-28c0-4765-94ad-eb83963631fe*/
+  --solid-surface-200-light: #f7f6f5;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/bba739cb-c0d3-4707-be90-c09e5d39df6c*/
+  --solid-surface-300-light: #f6f4f3;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/a45de724-1576-4c69-a3ca-74fc2b56ceb3*/
+  --solid-surface-400-light: #f2efed;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/9a94146e-0dee-49c1-80c7-a0b60480d71a*/
+  --solid-surface-500-light: #f0ecea;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/332501b3-29e8-497d-9bdd-506ecaa9740b*/
+  --solid-text-100: #ffffff;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/747758a5-1476-4e58-a703-90accb984e93*/
+  --solid-text-600: #6e6e6e;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/bd02a09a-6675-415c-b5ea-31ae8b0e8ca1*/
+  --solid-text-900: #131313;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/47909a2a-3a72-406c-8c69-ce96f1a45fff*/
+  --solid-text-brand: #07094a;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/7c1e3777-cd8a-4801-9f09-53d63462a978*/
+  --solid-text-primary: #131313;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/47909a2a-3a72-406c-8c69-ce96f1a45fff*/
+  --solid-weight-300: 300;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/98a0f365-d360-472b-9921-5d1615336080*/
+  --solid-weight-400: 400;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/2250f31f-9879-4f41-a651-f10b938ec3b1*/
+  --solid-weight-500: 500;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/0815eeae-3e73-4562-9d44-fd9ac4f949ca*/
+  --solid-weight-600: 600;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/38d31a75-0881-4590-856c-68ca64daac0a*/
+  --solid-weight-700: 700;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/5f669412-dfa2-4efb-9ac3-89922a63018c*/
+  --solid-weight-800: 800;
+  /*https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/32b1e15b-7c89-43c7-afac-50ffe07f8b44*/
+  /* END AUTO-GENERATED FROM FIGMA */
+  /* #region cvi */
+}

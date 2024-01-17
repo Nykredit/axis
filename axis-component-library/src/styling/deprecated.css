@@ -1,0 +1,325 @@
+/*
+ *
+ * This file contains deprecated design tokens. These are either from legacy projects or from before the components were restyled using the SOLID design language. 
+ * New components or restyling of existing components should not use anything in this file
+ *
+*/
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-root="true"]),
+*[data-brand="Nykredit"][data-context~="Default" i][data-root="true"],
+/* Temporarily allow for data-nested attribute */
+:host([data-brand="Nykredit"][data-context~="Default" i][data-nested="false"]),
+*[data-brand="Nykredit"][data-context~="Default" i][data-nested="false"] {
+  /* #region cvi */
+
+  /* Every brand token below this is currently deprecated */
+  --solid-action-secondary-500: #07094a;
+
+  /* --- LEGACY Nykredit branding tokens and size scales --- */
+  --brand-color-black: rgb(19, 19, 19);
+  --brand-color-white: rgb(255, 255, 255);
+  /* Nykredit primary colors */
+  --brand-color-hav: #07094a;
+  --brand-color-himmel: #68d2df;
+  --brand-color-horisont: #0f1e82;
+  --brand-color-valmue: #fb264e;
+
+  /* Nykredit secondary colors */
+  --brand-color-havbund: #948d86;
+  --brand-color-sand: #ede8e6;
+  --brand-color-sten: #ccc3b9;
+
+  /* Nykredit neutral colors */
+  --brand-color-lys-gul: #ffd568;
+  --brand-color-orange: #fead63;
+  --brand-color-lys-bla: #4192dc;
+  --brand-color-gron: #79b9a3;
+  --brand-color-lilla: #875ba3;
+  --brand-color-pale-green: #a4ddd1;
+
+  /* Additional colors */
+  --brand-color-black-alpha-03: rgb(19, 19, 19, 0.3);
+  --brand-color-black-alpha-005: rgb(19, 19, 19, 0.05);
+  --brand-color-black-alpha-01: rgb(19, 19, 19, 0.1);
+  --brand-color-black-alpha-008: #ececec; /* rgb(19, 19, 19, 0.08); on white background as hex */
+
+  /* Design foundation spacing */
+  --spacing-0px: calc(var(--dp) * 0);
+  --spacing-4px: calc(var(--dp) * 4);
+  --spacing-8px: calc(var(--dp) * 8);
+  --spacing-12px: calc(var(--dp) * 12);
+  --spacing-16px: calc(var(--dp) * 16);
+  --spacing-24px: calc(var(--dp) * 24);
+  --spacing-32px: calc(var(--dp) * 32);
+  --spacing-40px: calc(var(--dp) * 40);
+  --spacing-48px: calc(var(--dp) * 48);
+  --spacing-64px: calc(var(--dp) * 64);
+  --spacing-80px: calc(var(--dp) * 80);
+
+  /* OLD Base nykredit scale */
+  --size-base-0px: var(--spacing-0px);
+  --size-base-1px: calc(var(--dp) * 1);
+  --size-base-2px: calc(var(--dp) * 2);
+  --size-base-3px: calc(var(--dp) * 3);
+  --size-base-4px: calc(var(--dp) * 4);
+  --size-base-12px: var(--spacing-12px);
+  --size-base-14px: calc(var(--dp) * 14);
+  --size-base-16px: var(--spacing-16px);
+  --size-base-18px: calc(var(--dp) * 18);
+  --size-base-20px: calc(var(--dp) * 20);
+  --size-base-22px: calc(var(--dp) * 22);
+  --size-base-24px: var(--spacing-24px);
+  --size-base-26px: calc(var(--dp) * 26);
+  --size-base-32px: var(--spacing-32px);
+  --size-base-38px: calc(var(--dp) * 38);
+  --size-base-44px: calc(var(--dp) * 44);
+  --size-base-48px: var(--spacing-48px);
+  --size-base-72px: calc(var(--dp) * 72);
+  --size-base-128px: calc(var(--dp) * 128);
+
+  /* Border scale */
+  --size-border-slim: var(--size-base-1px);
+  --size-border-medium: var(--size-base-2px);
+  --size-border-wide: var(--size-base-3px);
+
+  /* Margin scale */
+  --size-margin-slim: var(--size-base-12px);
+  --size-margin-medium: var(--size-base-24px);
+  --size-margin-wide: var(--spacing-48px);
+  --size-margin-breathe: var(--size-base-128px);
+
+  /* Padding scale */
+  --size-padding-slim: var(--size-base-12px);
+  --size-padding-medium: var(--size-base-24px);
+  --size-padding-wide: var(--spacing-48px);
+
+  /* font sizes*/
+  --size-font-large: var(--spacing-48px);
+  /* DEPRECATE END*/
+
+  /* ---  Framework tokens from here on --- */
+
+  /* Contextual colors */
+  --surface-background-color: white;
+
+  /* Icon stroke scale */
+  --icon-stroke-width: var(--size-base-1px);
+
+  /* Font weights */
+  --font-weight-extra-bold: 800;
+  --font-weight-bold: 700;
+  --font-weight-semi-bold: 600;
+  --font-weight-regular: 400;
+  --font-weight-light: 300;
+
+  /* #endregion cvi */
+
+  /* Contextual layout tokens */
+
+  --layout-color-page: var(--brand-color-white);
+  --layout-margin-paragraph-paragraph: var(--size-margin-medium);
+  --layout-margin-heading-body: var(--size-margin-medium);
+  --layout-margin-body-input: var(--size-margin-medium);
+  --layout-margin-input-input: var(--size-margin-medium);
+  --layout-margin-section-section: var(--size-margin-wide);
+  --layout-margin-horizontal-section-section: var(--size-margin-breathe);
+  --layout-margin-interaction-interaction: var(--size-margin-slim);
+  --layout-border-color: var(--brand-color-sand);
+
+  /* Contextual Font Tokens */
+  --font-color: var(--brand-color-hav);
+  --font-color-disabled: var(--brand-color-havbund);
+  --font-color-inverse: var(--brand-color-sand);
+
+  /* Font input (text input) tokens */
+  --font-input-family: var(--brand-font-family);
+  --font-input-size: var(--size-base-16px);
+  --font-input-color: var(--brand-color-black);
+
+  /*Contextual Interaction tokens*/
+  --interaction-size-min: calc(var(--size-base-16px) * 2);
+  --interaction-color: var(--brand-color-horisont);
+
+  /* Contextual padding tokens */
+
+  /* DEPRECATED Input paddings for input elements such as radio buttons, checkboxes, pills etc. */
+  --interaction-input-padding-x: var(--size-base-16px);
+  --interaction-input-padding-y: var(--size-base-16px);
+
+  /* Button padding is primarily used for primary, secondary and tertiary buttons. Icon button uses min() of x and y padding */
+  --interaction-button-padding-x: var(--spacing-16px);
+  --interaction-button-padding-y: var(--spacing-12px);
+
+  /* Canvas paddings are used for components such as cards, navigationItem and timeslot (button) etc. */
+  --interaction-canvas-padding-x: var(--size-base-16px);
+  --interaction-canvas-padding-y: var(--size-base-12px);
+
+  /* Canvas border tokens etc. */
+  --interaction-canvas-border-width: var(--size-base-1px);
+  --interaction-canvas-border-style: solid;
+  --interaction-canvas-border-color: var(--brand-color-black-alpha-01);
+  --interaction-canvas-border-radius: var(--size-base-4px);
+  --interaction-canvas-background-passive: var(--brand-color-white);
+  --interaction-canvas-background-active: var(--brand-color-black-alpha-008);
+
+  /* Input field tokens */
+  --input-border-radius: var(--size-base-4px); /* Deprecated as of v 0.1.5 */
+  --input-border-width: var(--size-border-slim); /* Deprecated as of v 0.1.5 */
+  --input-border-style: solid; /* Deprecated as of v 0.1.5 */
+  --input-border-color: var(
+    --brand-color-black-alpha-005
+  ); /* Deprecated as of v 0.1.5 */
+  --input-background: var(
+    --brand-color-black-alpha-005
+  ); /* Deprecated as of v 0.1.5 */
+  --input-disabled-background: var(
+    --brand-color-black-alpha-005
+  ); /* Deprecated as of v 0.1.5 */
+
+  /* Radio button tokens */
+  --radio-input-inner-width: var(--spacing-12px);
+  --radio-input-outer-width: var(--spacing-24px);
+  --radio-input-border-width: calc(var(--size-base-1px) * 1.5);
+
+  /* Progress bar tokens */
+  --progress-bar-primary-color: var(--brand-color-himmel);
+  --progress-bar-secondary-color: var(--brand-color-black-alpha-008);
+  --progress-label-primary-color: var(--brand-color-hav);
+  --progress-label-secondary-color: var(--brand-color-black-alpha-03);
+  --progress-bar-height: var(--size-base-4px);
+
+  /* Icon */
+  --icon-label-underline-color: var(--solid-accent-primary-400);
+  --icon-label-underline-size: var(--size-base-2px);
+  --icon-label-underline-distance: var(--spacing-8px);
+
+  /* widget */
+  --widget-navigation-distance: var(--solid-spacing-2x);
+  --widget-content-border-color: var(--solid-neutral-03-100);
+
+  /* Skeleton */
+  --skeleton-background: var(--brand-color-black-alpha-008);
+
+  /* Helptext */
+  --helptext-min-width: 200px;
+  --helptext-max-width: 400px;
+  --helptext-font-size: var(--size-base-14px);
+  --helptext-font-color: var(--solid-text-100);
+  --helptext-background-color: var(--solid-action-secondary-500);
+  --helptext-padding: var(--size-padding-slim);
+  --helptext-border-radius: var(--interaction-primary-border-radius);
+
+  /* Unordered List Item*/
+  --unordered-list-item-marker-border-radius: 50%;
+  --unordered-list-item-marker-background-color: var(
+    --solid-accent-primary-500
+  );
+  --unordered-list-item-marker-height: var(--solid-spacing-2x);
+  --unordered-list-item-marker-width: var(--solid-spacing-2x);
+
+  /* graphic sizes*/
+
+  /** @deprecated style icons through icon variant selectors */
+  --graphic-size-label: var(--spacing-12px);
+  --graphic-size-avatar: var(--spacing-32px);
+  --graphic-size-x-small: var(--size-base-16px);
+  --graphic-size-small: var(--size-base-24px);
+  --graphic-size-medium: var(--size-base-48px);
+  --graphic-size-large: var(--size-base-72px);
+
+  --interaction-shadow-passive: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  --interaction-shadow-active: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+
+  /** @deprecated going forward primary, secondary and tertiary interactions are implemented through variants on buttons etc.*/
+  --interaction-primary-border-radius: var(--size-base-2px);
+  --interaction-primary-border-width: var(--size-base-0px);
+  --interaction-primary-border-style: initial;
+  --interaction-primary-border-color: initial;
+  --interaction-primary-background: var(--interaction-color);
+  --interaction-primary-shadow-color: var(--interaction-color);
+  --interaction-primary-shadow-passive: var(--interaction-shadow-passive);
+  --interaction-primary-shadow-active: var(--interaction-shadow-active);
+  --interaction-primary-shadow-transform-passive: initial;
+  --interaction-primary-shadow-transform-active: scale(1.03);
+  /* --interaction-primary-padding: var(--size-base-16px); (deprecated)  */
+  --interaction-primary-text-color: var(--font-color-inverse);
+
+  --interaction-secondary-border-radius: var(--size-base-2px);
+  --interaction-secondary-border-width: var(--size-base-0px);
+  --interaction-secondary-border-style: initial;
+  --interaction-secondary-border-color: initial;
+  --interaction-secondary-background: var(--brand-color-white);
+  --interaction-secondary-shadow-color: var(--brand-color-white);
+  --interaction-secondary-shadow-passive: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  --interaction-secondary-shadow-active: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  --interaction-secondary-shadow-transform-passive: initial;
+  --interaction-secondary-shadow-transform-active: scale(1.03);
+  /* --interaction-secondary-padding: var(--size-base-16px); (deprecated) */
+  --interaction-secondary-text-color: var(--brand-color-black);
+
+  --interaction-tertiary-border-radius: var(--size-base-2px);
+  --interaction-tertiary-border-width: var(--size-base-0px);
+  --interaction-tertiary-border-style: initial;
+  --interaction-tertiary-border-color: initial;
+  --interaction-tertiary-background: transparent;
+  --interaction-tertiary-shadow-passive: 0px 3px 1px -2px rgba(0, 0, 0, 0),
+    0px 2px 2px 0px rgba(0, 0, 0, 0), 0px 1px 5px 0px rgba(0, 0, 0, 0);
+  --interaction-tertiary-shadow-active: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  --interaction-tertiary-shadow-transform-passive: initial;
+  --interaction-tertiary-shadow-transform-active: scale(1.03);
+  /* --interaction-tertiary-padding: var(--size-base-16px); (deprecated) */
+  --interaction-tertiary-text-color: var(--brand-color-black);
+}
+
+/*
+  Context Accent
+*/
+:host([data-brand="Nykredit"][data-context="Focus"]):not([data-root="false"]),
+*[data-brand="Nykredit"][data-context="Focus"]:not([data-root="false"]) {
+  --brand-color-white: #fff;
+
+  /* TODO: Backport this to components and pages*/
+  --layout-color-page: var(--brand-color-horisont);
+
+  --font-color: var(--brand-color-sand);
+  --font-color-inverse: var(--brand-color-horisont);
+
+  --font-heading-color: var(--brand-color-white);
+  --font-sub-heading-color: var(--brand-color-white);
+  --font-section-heading-color: var(--brand-color-white);
+  --font-label-note-color: var(--brand-color-havbund);
+  --font-body-color: var(--brand-color-white);
+
+  --font-card-heading-color: var(--brand-color-white);
+
+  --interaction-color: var(--brand-color-himmel);
+
+  --interaction-primary-background: var(--interaction-color);
+  --interaction-primary-text-color: var(--font-color-inverse);
+
+  --interaction-secondary-text-color: var(--interaction-color);
+  --interaction-secondary-border-color: var(--interaction-color);
+  --interaction-secondary-border-width: var(--size-border-medium);
+  --interaction-secondary-border-style: solid;
+  --interaction-secondary-background: var(--layout-color-page);
+  --interaction-secondary-shadow-passive: 0px 3px 1px -2px rgba(255, 255, 255, 0.2),
+    0px 2px 2px 0px rgba(255, 255, 255, 0.14),
+    0px 1px 5px 0px rgba(255, 255, 255, 0.12);
+
+  --interaction-tertiary-text-color: var(--interaction-color);
+  --interaction-tertiary-shadow-active: 0px 3px 1px -2px rgba(255, 255, 255, 0.2),
+    0px 2px 2px 0px rgba(255, 255, 255, 0.14),
+    0px 1px 5px 0px rgba(255, 255, 255, 0.12);
+
+  --input-background: var(--brand-color-hav);
+  --input-font-color: var(--brand-color-white);
+  --input-border-color: var(--interaction-color);
+
+  --interaction-tertiary-border-color: initial;
+  --interaction-tertiary-text-color: var(--brand-color-white);
+}

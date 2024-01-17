@@ -1,0 +1,24 @@
+@import "../../styling/nykredit.css";
+
+:host {
+  display: flex;
+  --label-color: var(--color);
+  --icon-stroke: var(--color);
+  --icon-fill: var(--color);
+  --box-foreground: var(--background-color);
+  --padding: 0px var(--padding-x);
+}
+
+.component {
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  border: var(--border);
+  display: flex;
+  align-items: center;
+  min-height: var(--height);
+  max-height: var(--height);
+}
+
+.label {
+  margin: 0;
+}

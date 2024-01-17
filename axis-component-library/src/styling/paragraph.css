@@ -1,0 +1,102 @@
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Paragraph"]) {
+  --font-color: var(--solid-text-900);
+}
+
+/* Contextual override for font paragraph variants */
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Paragraph"]),
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Paragraph"][data-variant="body" i]) {
+  /* Paragraph body (currently default variant) */
+  --font-family: var(--brand-font-family);
+  --font-weight: var(--solid-weight-400);
+  --font-size: var(--solid-size-4x);
+  --font-line-height: var(--solid-size-6x);
+  --font-cap-size-before: 0; /* dependent on font size and line height */
+  --font-cap-size-after: 0; /* dependent on font size and line height */
+  --font-style: initial;
+  --font-transform: initial;
+  --font-letter-spacing: var(--solid-letter-spacing-200);
+}
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Paragraph"][data-variant="body-emphasis" i]) {
+  --font-family: var(--brand-font-family);
+  --font-weight: var(--solid-weight-700);
+  --font-size: var(--solid-size-4x);
+  --font-line-height: var(--solid-size-6x);
+  --font-cap-size-before: 0; /* dependent on font size and line height */
+  --font-cap-size-after: 0; /* dependent on font size and line height */
+  --font-style: initial;
+  --font-transform: initial;
+  --font-letter-spacing: var(--solid-letter-spacing-200);
+}
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Paragraph"][data-variant="manchet" i]) {
+  --font-family: var(--brand-font-family);
+  --font-weight: var(--solid-weight-400);
+  --font-size: var(--solid-size-4_5x);
+  --font-line-height: var(--solid-size-7x);
+  --font-cap-size-before: 0; /* dependent on font size and line height */
+  --font-cap-size-after: 0; /* dependent on font size and line height */
+  --font-style: initial;
+  --font-transform: initial;
+  --font-color: var(--solid-action-primary-900);
+  --font-letter-spacing: var(--solid-letter-spacing-100);
+}
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Paragraph"][data-variant="assistive" i]),
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Paragraph"][data-variant="legal" i]) {
+  --font-family: var(--brand-font-family);
+  --font-weight: var(--solid-weight-400);
+  --font-size: var(--solid-size-3x);
+  --font-line-height: var(--solid-size-4x);
+  --font-cap-size-before: 0; /* dependent on font size and line height */
+  --font-cap-size-after: 0; /* dependent on font size and line height */
+  --font-style: initial;
+  --font-transform: initial;
+  --font-letter-spacing: var(--solid-letter-spacing-350);
+}
+
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Paragraph"][data-variant="assistive-emphasis" i]) {
+  --font-family: var(--brand-font-family);
+  --font-weight: var(--solid-weight-700);
+  --font-size: var(--solid-size-3x);
+  --font-line-height: var(--solid-size-4x);
+  --font-cap-size-before: 0; /* dependent on font size and line height */
+  --font-cap-size-after: 0; /* dependent on font size and line height */
+  --font-style: initial;
+  --font-transform: initial;
+  --font-letter-spacing: var(--solid-letter-spacing-350);
+}
+
+/* Contextual override for font paragraph variants */
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Paragraph"][data-variant="regular-3x" i]),
+*[data-brand="Nykredit"][data-context~="Default" i][data-component="Paragraph"][data-variant="regular-3x" i] {
+  /* Paragraph body (currently default variant) */
+  --font-family: var(--brand-font-family);
+  --font-weight: var(--font-weight-regular);
+  --font-size: var(--size-base-12px);
+  --font-line-height: var(--size-base-16px);
+  --font-cap-size-before: 0; /* dependent on font size and line height */
+  --font-cap-size-after: 0; /* dependent on font size and line height */
+  --font-style: initial;
+  --font-transform: initial;
+  --font-color: var(--brand-color-black);
+}
+
+/* a tag styling - unsafe link */
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Paragraph"])
+  a {
+  color: var(--solid-accent-secondary-800);
+  text-decoration: var(--solid-letter-deco-underline);
+}
+
+/* hover */
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Paragraph"])
+  a:hover {
+  text-decoration: none;
+}
+
+/* focus */
+:host([data-brand="Nykredit"][data-context~="Default" i][data-component="Paragraph"])
+  a:focus {
+  outline: var(--solid-size-_5x) solid var(--solid-accent-secondary-500);
+  text-decoration: var(--solid-letter-deco-underline);
+}

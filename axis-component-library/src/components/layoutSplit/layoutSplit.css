@@ -1,0 +1,33 @@
+@import "../../styling/nykredit.css";
+
+.component {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* @media (orientation: portrait) and (max-width: 1200px) {
+  .component {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .component > slot + slot {
+    margin-top: var(--layout-margin-section-section);
+  }
+} */
+
+/* @media (orientation: landscape),
+  (orientation: portrait) and (min-width: 1200px) { */
+.component {
+  flex-direction: row;
+  justify-content: stretch;
+}
+.component > slot + slot {
+  margin-left: var(--layout-margin-section-section);
+}
+
+/* } */
+
+.component > slot {
+  display: block;
+  flex: 1 1 auto;
+}

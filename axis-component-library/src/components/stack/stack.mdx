@@ -1,0 +1,79 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './stack.stories';
+
+<Meta title="SOLID/Stack" />
+
+# Stack Component
+
+This component allows you to layout children with specified spacing both vertically and horizontally.
+
+<Canvas of={Stories.Example} />
+
+## Description
+
+The stack component is used to layout children with a specified spacing in both directions. To control both vertical and horizontal spacing, use multiple nested stack's .
+
+## Usage
+
+`<nk-stack></nk-stack>`
+
+## Usage notes
+
+### Do:
+
+- Use this to define spacing between components
+
+### Do not:
+
+## @API
+
+### Properties
+
+- variant (`spacing-none`, `spacing-min`,`spacing-tiny`,`spacing-xsmall`,`spacing-small`,`spacing-medium`,`spacing-xlarge`,`spacing-max`)
+- orientation (horizontal | vertical)
+- alignment (none | start | center | end)
+- wrap (wrap | nowrap)
+
+## Orientations
+
+### Vertical orientation
+
+<Canvas of={Stories.VerticalOrientation} />
+
+### Horizontal orientation
+
+<Canvas of={Stories.HorizontalOrientation} />
+
+## Variants
+
+### spacing-none
+
+<Canvas of={Stories.SpacingNone} />
+
+### spacing-min
+
+<Canvas of={Stories.SpacingMin} />
+
+### spacing-tiny
+
+<Canvas of={Stories.SpacingTiny} />
+
+### spacing-xsmall
+
+<Canvas of={Stories.SpacingXSmall} />
+
+### spacing-small
+
+<Canvas of={Stories.SpacingSmall} />
+
+### spacing-medium
+
+<Canvas of={Stories.SpacingMedium} />
+
+### spacing-xlarge
+
+<Canvas of={Stories.SpacingXLarge} />
+
+### spacing-max
+
+<Canvas of={Stories.SpacingMax} />

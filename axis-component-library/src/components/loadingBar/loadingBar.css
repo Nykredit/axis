@@ -1,0 +1,28 @@
+@import "../../styling/nykredit.css";
+
+progress {
+  height: var(--solid-size-2x);
+  width: 200px;
+  
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: var(--solid-corner-medium);
+  background-color: var(--solid-action-primary-100); /* firefox fix for background-color */
+}
+
+progress::-webkit-progress-bar{
+  background-color: var(--solid-action-primary-100);
+  border-radius: var(--solid-corner-medium);
+}
+
+progress::-webkit-progress-value{
+  background-color: var(--solid-action-primary-700);
+  border-radius: var(--solid-corner-medium);
+}
+
+progress::-moz-progress-bar {
+  background-color: var(--solid-action-primary-700);
+  border-radius: var(--solid-corner-medium);
+}

@@ -1,0 +1,33 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './tagStack.stories';
+
+<Meta title="SOLID/TagStack" />
+
+# TagStack component
+
+A component to show a stack of tags
+
+<Canvas of={Stories.Example} />
+
+## Usage
+
+`<nk-tag-list></nk-tag-list>`
+
+## Child components
+
+This component is a componsition of the following
+
+- tag
+
+## @API
+
+### Properties
+
+- variant (`horizontal` | `vertical`)
+- tags (array with tagProps => See Tag for reference)
+
+## Variations
+
+### Example with vertical variant
+
+<Canvas of={Stories.Vertical} />

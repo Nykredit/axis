@@ -1,0 +1,41 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './radioDetailedList.stories';
+
+<Meta title="SOLID/RadioDetailedList" />
+
+# RadioDetailedList Component
+
+Component showing how you can show a list of radio buttons
+
+<Canvas of={Stories.Example} />
+
+## Description
+
+This component is created to display a list of radio buttons with title and label.
+
+## Usage
+
+`<nk-radio-list></nk-radio-list>`
+
+## Child components
+
+This component is a componsition of the following
+
+- radio-button-list-input
+
+## External Resources
+
+## @API
+
+### Properties
+
+- orientation: (`vertical` | `horizontal`)
+- label (`string`)
+- radiobuttons (`array`)
+- value (`string`)
+
+## Variations
+
+### horizontal
+
+<Canvas of={Stories.Horizontal} />

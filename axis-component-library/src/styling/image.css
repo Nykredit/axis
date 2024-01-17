@@ -1,0 +1,15 @@
+:host([data-brand="Nykredit"][data-component="Image"][data-variant="cover" i]) {
+  --image-fit: cover;
+}
+
+:host([data-brand="Nykredit"][data-component="Image"][data-variant="fill" i]) {
+  --image-fit: fill;
+}
+
+:host([data-brand="Nykredit"][data-component="Image"][data-variant="contain" i]) {
+  --image-fit: contain;
+}
+
+:host([data-brand="Nykredit"][data-component="Image"][data-variant="none" i]) {
+  --image-fit: none;
+}

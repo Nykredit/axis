@@ -1,0 +1,64 @@
+@import "../../styling/nykredit.css";
+
+:host {
+  position: relative;
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  box-sizing: border-box;
+  opacity: var(--opacity);
+}
+
+.component {
+  display: block;
+  position: relative;
+  /* Ensure that the touch target never gets below our interaction threshold */
+  max-width: 100%;
+  outline: none;
+  box-sizing: border-box;
+  --button-radius: var(--border-radius);
+}
+
+.frontplane {
+  /* Ensure that the touch target never gets below our interaction threshold */
+  max-height: var(--max-height, unset);
+  min-height: var(--min-height, unset);
+  max-width: min(var(--max-width), 100%);
+  min-width: var(--min-width, unset);
+  background: var(--background);
+  position: relative;
+  border-radius: var(--button-radius);
+  border: var(--border);
+  outline: var(--outline);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--padding-y, 0) var(--padding-x, 0);
+  /* 
+  This should ensure that the button behaves like a standard block element with regards to its size.
+  TODO: Verify that this covers cross browser concerns (SF). 
+  Verified in Firefox, Edge and Chrome
+  */
+  inline-size: -webkit-fill-available;
+  inline-size: -moz-available;
+}
+
+.frontplane:disabled:hover {
+  cursor: not-allowed;
+}
+
+.frontplane:hover {
+  cursor: pointer;
+}
+
+.frontplane > * {
+  flex: 0 1 auto;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  pointer-events: none;
+}
+
+.label {
+  opacity: var(--label-opacity);
+}

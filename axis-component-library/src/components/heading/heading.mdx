@@ -1,0 +1,80 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './heading.stories';
+
+<Meta title="SOLID/Heading" />
+
+# Heading Component
+
+Heading component for rendering a piece of text as a heading
+
+<Canvas of={Stories.Example} />
+
+## Description
+
+The heading allows you to render a heading or sub heading, depending on the specified variant of the specified h\* level.
+
+## Usage
+
+`<nk-heading></nk-heading>`
+
+### Do:
+
+- Use the component to render your heading tree
+
+### Do not:
+
+- Use as a purely visual element or other text element which is not strictly a heading
+
+## @API
+
+### Properties
+
+- text (`string`)
+- variant (`huge`, `xlarge`, `large`, `medium`, `small`, `xsmall`, `tiny`)
+- level (`1`,`2`,`3`,`4`,`5`,`6`)
+
+## Variations
+
+Short summary of the variation options
+
+### Variant: Huge
+
+Used for article headlines or page heading
+
+<Canvas of={Stories.Huge} />
+
+### Variant: Xlarge
+
+<Canvas of={Stories.XLarge} />
+
+### Variant: Large
+
+<Canvas of={Stories.Large} />
+
+### Variant: medium
+
+<Canvas of={Stories.Medium} />
+
+### Variant: small
+
+<Canvas of={Stories.Small} />
+
+### Variant: Xsmall
+
+<Canvas of={Stories.XSmall} />
+
+### Variant: Tiny
+
+<Canvas of={Stories.Tiny} />
+
+### Variant: alignment left
+
+<Canvas of={Stories.AlignmentLeft} />
+
+### Variant: alignment center
+
+<Canvas of={Stories.AlignmentCenter} />
+
+### Variant: alignment right
+
+<Canvas of={Stories.AlignmentRight} />

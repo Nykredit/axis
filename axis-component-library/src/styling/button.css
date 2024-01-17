@@ -1,0 +1,169 @@
+/* Button */
+
+/** Primary / SOLID Filled */
+
+:host([data-brand="Nykredit"][data-component="Button"]) {
+  --min-width: var(--interaction-size-min);
+  --min-height: var(--solid-size-10x, var(--interaction-size-min));
+  --max-height: var(--solid-size-10x, unset);
+  --padding-x: var(--solid-size-5x);
+}
+
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="primary" i]),
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="filled" i]) {
+  --border-radius: calc(
+    var(--interaction-button-padding-y) * 2 + var(--size-base-14px)
+  );
+  --border: var(--solid-size-_5x) solid var(--solid-action-primary-700);
+  --background: var(--solid-action-primary-700);
+  --text-color: var(--font-color-inverse);
+  --box-shadow: var(--solid-shadow-surface-01);
+  --label-color: var(--solid-text-100); /* This is not matching to spec*/
+  --icon-color: var(--solid-text-100);
+  --icon-fill: var(--solid-text-100);
+}
+
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="primary" i]:not([data-disabled="true"]):hover),
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="filled" i]:not([data-disabled="true"]):hover) {
+  --background: var(--solid-action-primary-800);
+  --border: var(--solid-size-_5x) solid var(--solid-action-primary-800);
+  --box-shadow: var(--solid-shadow-surface-01);
+}
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="primary" i]:not([data-disabled="true"]):focus),
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="filled" i]:not([data-disabled="true"]):focus) {
+  --background: var(--solid-action-primary-700);
+  --border: var(--solid-size-_5x) solid var(--solid-accent-secondary-500);
+  --box-shadow: var(--solid-shadow-surface-01);
+}
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="primary" i]:not([data-disabled="true"]):active),
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="filled" i]:not([data-disabled="true"]):active) {
+  --background: var(--solid-action-primary-900);
+  --border: var(--solid-size-_5x) solid var(--solid-action-primary-900);
+  --box-shadow: initial;
+}
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="primary" i][data-disabled="true"]),
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="filled" i][data-disabled="true"]) {
+  --background: var(--solid-neutral-01-300);
+  --border: var(--solid-size-_5x) solid var(--solid-neutral-01-300);
+  --box-shadow: var(--solid-shadow-surface-01);
+  --label-color: var(--solid-neutral-03-500);
+  --icon-color: var(--solid-neutral-03-500);
+  --icon-fill: var(--solid-neutral-03-500);
+}
+
+/* Secondary / SOLID Neutral */
+
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="secondary" i]),
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="neutral" i]) {
+  --border-radius: calc(
+    var(--interaction-button-padding-y) * 2 + var(--size-base-14px)
+  );
+  --border: var(--solid-size-_5x) solid var(--solid-surface-100-light);
+  --background: var(--solid-surface-100-light);
+  --label-color: var(--solid-action-primary-700);
+  --icon-color: var(--solid-action-primary-700);
+  --icon-fill: var(--solid-action-primary-700);
+  --box-shadow: var(--solid-shadow-surface-01);
+}
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="secondary" i]:not([data-disabled="true"]):hover),
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="neutral" i]:not([data-disabled="true"]):hover) {
+  --background: var(--solid-action-primary-50);
+  --border: var(--solid-size-_5x) solid var(--solid-action-primary-50);
+  --box-shadow: var(--solid-shadow-surface-01);
+}
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="secondary" i]:not([data-disabled="true"]):focus),
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="neutral" i]:not([data-disabled="true"]):focus) {
+  --background: var(--solid-surface-100-light);
+  --border: var(--solid-size-_5x) solid var(--solid-accent-secondary-500);
+  --box-shadow: var(--solid-shadow-surface-01);
+}
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="secondary" i]:not([data-disabled="true"]):active),
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="neutral" i]:not([data-disabled="true"]):active) {
+  --background: var(--solid-action-primary-100);
+  --border: var(--solid-size-_5x) solid var(--solid-action-primary-100);
+  --label-color: var(--solid-action-primary-700);
+  --icon-color: var(--solid-action-primary-700);
+  --icon-fill: var(--solid-action-primary-700);
+}
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="secondary" i][data-disabled="true"]),
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="neutral" i][data-disabled="true"]) {
+  --background: var(--solid-surface-100-light);
+  --box-shadow: var(--solid-shadow-surface-01);
+  --label-color: var(--solid-neutral-03-500);
+  --icon-color: var(--solid-neutral-03-500);
+  --icon-fill: var(--solid-neutral-03-500);
+}
+
+/* SOlID outline */
+
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="outline" i]) {
+  --border-radius: calc(
+    var(--interaction-button-padding-y) * 2 + var(--size-base-14px)
+  );
+  --outline: var(--solid-size-_25x) solid var(--solid-action-primary-700);
+  --background: transparent;
+  --label-color: var(--solid-action-primary-700);
+  --icon-color: var(--solid-action-primary-700);
+  --icon-fill: var(--solid-action-primary-700);
+  --box-shadow: initial;
+}
+
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="outline" i]:not([data-disabled="true"]):hover) {
+  --background: var(--solid-action-primary-50);
+  --outline: var(--solid-size-_5x) solid var(--solid-action-primary-700);
+}
+
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="outline" i]:not([data-disabled="true"]):focus) {
+  --background: var(--solid-surface-100-light);
+  --outline: var(--solid-size-_5x) solid var(--solid-accent-secondary-500);
+}
+
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="outline" i]:not([data-disabled="true"]):active) {
+  --background: var(--solid-action-primary-100);
+  --outline: var(--solid-size-_25x) solid var(--solid-action-primary-700);
+}
+
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="outline" i][data-disabled="true"]) {
+  --background: var(--solid-surface-100-light);
+  --outline: var(--solid-size-_25x) solid var(--solid-neutral-03-500);
+  --label-color: var(--solid-neutral-03-500);
+  --icon-color: var(--solid-neutral-03-500);
+  --icon-fill: var(--solid-neutral-03-500);
+}
+
+/* Tertiary / SOLID Ghost*/
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="tertiary" i]),
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="ghost" i]) {
+  --border-radius: calc(
+    var(--interaction-button-padding-y) * 2 + var(--size-base-14px)
+  );
+  --border: var(--solid-size-_5x) solid transparent;
+  --background: transparent;
+  --label-color: var(--solid-action-primary-700);
+  --icon-color: var(--solid-action-primary-700);
+  --icon-fill: var(--solid-action-primary-700);
+  /* --elevation: button; */
+}
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="tertiary" i]:not([data-disabled="true"]):hover),
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="ghost" i]:not([data-disabled="true"]):hover) {
+  --background: var(--solid-action-primary-50);
+  --border: var(--solid-size-_5x) solid var(--solid-action-primary-50);
+}
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="tertiary" i]:not([data-disabled="true"]):focus),
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="ghost" i]:not([data-disabled="true"]):focus) {
+  --background: var(--solid-surface-100-light);
+  --border: var(--solid-size-_5x) solid var(--solid-accent-secondary-500);
+}
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="tertiary" i]:not([data-disabled="true"]):active),
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="ghost" i]:not([data-disabled="true"]):active) {
+  --background: var(--solid-action-primary-100);
+  --border: var(--solid-size-_5x) solid var(--solid-action-primary-100);
+}
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="tertiary" i][data-disabled="true"]),
+:host([data-brand="Nykredit"][data-component="Button"][data-variant="ghost" i][data-disabled="true"]) {
+  --label-color: var(--solid-neutral-03-500);
+  --background: transparent;
+  --border: var(--solid-size-_5x) solid transparent;
+  --icon-color: var(--solid-neutral-03-500);
+  --icon-fill: var(--solid-neutral-03-500);
+}

@@ -1,0 +1,12 @@
+@import "../../styling/nykredit.css";
+
+:host {
+  display: contents;
+  list-style-type: disc;
+  list-style-position: outside;
+  margin: 0;
+}
+
+.unordered-list {
+  padding-left: var(--padding-left);
+}

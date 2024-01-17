@@ -1,0 +1,47 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './alert.stories';
+
+<Meta title="SOLID/Alert" />
+
+# Alert Component
+
+Component showing how you can show an alert with custom text, icon and button
+
+<Canvas of={Stories.Major} />
+
+## Description
+
+This component is created to display an alert how it was designed in the ElBil project.
+
+## Usage
+
+`<nk-alert></nk-alert>`
+
+## Child components
+
+This component is a componsition of the following
+
+- stack
+- paragraph
+- icon
+- button
+
+## External Resources
+
+## @API
+
+### Properties
+
+- variant: (`major` | `minor`)
+- icon (`string`)
+- text (`string`)
+- buttonLabel (`string`)
+- onbuttonclicked (`function`)
+
+## Variations
+
+This component supports different variants
+
+### Minor variant
+
+<Canvas of={Stories.Minor} />

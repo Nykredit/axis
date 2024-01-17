@@ -1,0 +1,33 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './loadingBar.stories';
+
+<Meta title="SOLID/LoadingBar" />
+
+# Loading bar component
+
+Demo component showing how to use loading bar
+
+<Canvas of={Stories.Default} />
+
+## Description
+
+## Usage
+
+`<nk-loader></nk-loader>`
+
+## @API
+
+### Properties
+
+- text (string)
+- percentage (number)
+
+## Variations
+
+### 50% complete
+
+<Canvas of={Stories.HalfFull} />
+
+### 100% complete
+
+<Canvas of={Stories.Done} />

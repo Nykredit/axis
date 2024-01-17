@@ -1,0 +1,32 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './radio.stories';
+
+<Meta title="SOLID/Radio" />
+
+# Radiobutton Component
+
+A basic radiobutton component which can be used in a molecule
+
+<Canvas of={Stories.Default} />
+
+<Canvas of={Stories.Checked} />
+
+## Usage
+
+`<nk-radio></nk-radio>`
+
+## @API
+
+### Properties
+
+- value (`boolean`)
+- disabled (`boolean`)
+- name (`string`)
+
+### Disabled
+
+<Canvas of={Stories.Disabled} />
+
+### Disabled and checked
+
+<Canvas of={Stories.DisabledChecked} />

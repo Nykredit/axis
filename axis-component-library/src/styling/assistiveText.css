@@ -1,0 +1,26 @@
+:host([data-brand="Nykredit"][data-component="AssistiveText"]) {
+  --padding-x: var(--interaction-button-padding-x);
+  --padding-y: 0.5rem;
+  --border-style: var(--solid-border-solid);
+  --border-size: var(--solid-border-small);
+  --border-radius: var(--solid-corner-small);
+  --offset: var(--solid-size-5x);
+  --min-height: var(--solid-size-8_5x);
+  --pointer-top-position: 6px;
+  --pointer-width: var(--solid-size-5x);
+  --pointer-height: var(--solid-size-5x);
+  --border-radius: var(--solid-border-medium);
+}
+
+:host([data-brand="Nykredit"][data-component="AssistiveText"][data-variant="info" i]) {
+  --background: var(--solid-accent-secondary-800);
+  --color: var(--solid-surface-100-light);
+  --border-color: var(--solid-accent-secondary-800);
+}
+
+:host([data-brand="Nykredit"][data-component="AssistiveText"][data-variant="error" i]) {
+  --background: var(--solid-accent-primary-800);
+  --color: var(--solid-surface-100-light);
+  --border-color: var(--solid-accent-primary-800);
+  --offset: calc(100% - var(--solid-size-5x));
+}

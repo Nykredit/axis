@@ -1,0 +1,50 @@
+@import "../../styling/nykredit.css";
+
+:host {
+  --border-radius: var(--solid-corner-small);
+  --padding: var(--solid-size-4x) var(--solid-size-6x) var(--solid-size-4x)
+    var(--solid-size-10x);
+}
+
+:host([data-variant="major"]) {
+  --box-foreground: var(--solid-category-04-500);
+  --paragraph-color: var(--solid-text-100);
+  --label-color: var(--solid-text-100);
+  --font-color: var(--solid-text-100);
+  --icon-fill: var(--solid-text-100);
+  --icon-stroke: var(--solid-text-100);
+  --icon-color: var(--solid-text-100);
+}
+
+:host([data-variant="minor"]) {
+  --box-foreground: var(--solid-surface-500-light);
+  --paragraph-color: var(--solid-text-600);
+  --label-color: var(--solid-text-600);
+  --font-color: var(--solid-text-600);
+  --icon-fill: var(--solid-text-600);
+  --icon-stroke: var(--solid-text-600);
+  --icon-color: var(--solid-text-600);
+}
+
+:host([data-variant="major"]) .component {
+  background-color: var(--solid-category-04-500);
+}
+
+:host([data-variant="minor"]) .component {
+  background-color: var(--solid-surface-500-light);
+}
+
+.component {
+  min-height: var(--solid-size-20x);
+  border-radius: var(--solid-corner-small);
+  display: flex;
+  align-items: center;
+}
+
+.flex-1 {
+  flex: 1 1 auto;
+}
+
+.button {
+  --box-shadow: none;
+}

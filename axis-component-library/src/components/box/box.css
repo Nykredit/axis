@@ -1,0 +1,73 @@
+@import "../../styling/nykredit.css";
+
+:host {
+  display: block;
+}
+
+.component {
+  position: relative;
+}
+
+.component,
+.component > * {
+  width: 100%;
+  height: 100%;
+}
+
+.backplane {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: var(--border-radius);
+  position: absolute;
+  box-shadow: var(--box-shadow);
+  background-color: var(--box-background);
+  transform: var(--box-transform);
+  transition: all 0.36s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.backplane > * {
+  --border-radius: initial;
+  --box-shadow: initial;
+  --box-background: initial;
+  --box-transform: initial;
+}
+
+.backplane::after {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  transition: transform 0.36s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.frontplane {
+  /* Todo: remove this*/
+  /* opacity: 0.2; */
+  transform: scale(1, 1);
+  background-color: var(--box-foreground);
+  border-radius: var(--border-radius);
+  overflow: var(--box-overflow);
+  border-style: var(--elevation-border-style);
+  border-width: var(--elevation-border-width);
+  border-color: var(--elevation-border-color);
+  outline: var(--elevation-outline-width) var(--elevation-outline-style)
+    var(--elevation-outline-color);
+  padding: var(--padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: var(--elevation-justify-content);
+}
+
+.frontplane > * {
+  --box-foreground: initial;
+  --border-radius: initial;
+  --box-overflow: initial;
+  --elevation-outline-width: initial;
+  --elevation-outline-style: initial;
+  --elevation-outline-color: initial;
+  --elevation-border-width: initial;
+  --elevation-border-style: initial;
+  --elevation-border-color: initial;
+  --padding: initial;
+  --elevation-justify-content: initial;
+}

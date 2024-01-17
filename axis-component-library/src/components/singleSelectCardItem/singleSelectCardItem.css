@@ -1,0 +1,5 @@
+@import "../../styling/nykredit.css";
+
+:host {
+  max-width: var(--max-width);
+}

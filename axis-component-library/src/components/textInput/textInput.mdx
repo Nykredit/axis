@@ -1,0 +1,47 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './textInput.stories';
+
+<Meta title="SOLID/TextInput" />
+
+# TextInput Component
+
+Text input field
+
+<Canvas of={Stories.Example} />
+
+## Usage
+
+`<nk-text-input></nk-text-input>`
+
+## Child components
+
+This component is a molecule consisting of the following components:
+
+- `inputBase`
+- `textInputBase`
+
+## @API
+
+### Properties
+
+- label (string)
+- value (string)
+- variant (`default`, `inline`)
+- issearchable (boolean)
+- width (string)
+- disabled (boolean)
+- maxLength (string)
+
+### Event handlers
+
+- change (ChangeEventArgs) - Event handler for listening for changes in value
+
+## Variants
+
+### Readonly
+
+<Canvas of={Stories.Disabled} />
+
+### Inline
+
+<Canvas of={Stories.Inline} />

@@ -1,0 +1,61 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './icon.stories';
+
+<Meta title="SOLID/Icon" />
+
+# Icon Component
+
+Component showing icon in different sizes
+
+<Canvas of={Stories.Example} />
+
+## Description
+
+This component is wrapper around the SOLID icon library (Nucleo)
+
+## Usage
+
+`<nk-icon-system></nk-icon-system>`
+
+### Do:
+
+- Use this component directly for illustrative purposes.
+
+### Do not:
+
+- Add event handlers to this component directly. Use our Button or Anchor components instead as these are designed appropriately for interaction.
+
+## @API
+
+### Properties
+
+- name (string)
+- variant (string)
+- size ( `small`, `medium`, `large`)
+
+### Design tokens
+
+The icon component can be styled through 4 design tokens
+
+- `--icon-color-fallback` - fallback color if no other color has been defined. This is useful for default colors that can be overwritten.
+- `--icon-stroke` - stroke color. Falls back to `--icon-color-fallback`
+- `--icon-fill` - fill color. Falls back to `--icon-color-fallback`
+- `--icon-color` - fill or stroke color. Overrides `--icon-stroke` and `--icon-fill`
+
+## Icon sizes
+
+### size = x-small
+
+<Canvas of={Stories.XSmall} />
+
+### size = small
+
+<Canvas of={Stories.Small} />
+
+### size = medium
+
+<Canvas of={Stories.Medium} />
+
+### size = large
+
+<Canvas of={Stories.Large} />

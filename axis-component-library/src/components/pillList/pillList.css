@@ -1,0 +1,17 @@
+@import "../../styling/nykredit.css";
+
+:host {
+  display: block;
+}
+
+.component {
+  width: 100%;
+  display: block;
+  margin-right: calc(-1 * var(--layout-margin-interaction-interaction));
+  margin-bottom: calc(-1 * var(--layout-margin-interaction-interaction));
+}
+
+.component > * {
+  margin-right: var(--layout-margin-interaction-interaction);
+  margin-bottom: var(--layout-margin-interaction-interaction);
+}

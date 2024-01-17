@@ -1,0 +1,25 @@
+:host([data-brand="Nykredit"][data-component="AccordionItem"]) {
+  --padding-header: var(--solid-spacing-4x) var(--solid-spacing-4x);
+  --border-style: var(--solid-border-solid);
+  --border-width: 0 0 var(--solid-border-small) 0;
+  --border-color: var(--solid-neutral-03-100);
+  --icon-size: var(--solid-size-8x);
+}
+
+:host([data-brand="Nykredit"][data-component="AccordionItem"][data-open="true"]) {
+  --max-height: 2000px;
+  --padding-content: 0 var(--solid-spacing-4x) var(--solid-spacing-4x)
+    var(--solid-spacing-4x);
+  --transition-max-height: max-height 600ms ease-in;
+}
+
+:host([data-brand="Nykredit"][data-component="AccordionItem"][data-open="false"]) {
+  --max-height: 0px;
+  --padding-content: 0 var(--solid-spacing-4x);
+}
+
+:host([data-brand="Nykredit"][data-component="Accordion"]) {
+  --border-style: var(--solid-border-solid);
+  --border-width: var(--solid-border-small) 0 0 0;
+  --border-color: var(--solid-neutral-03-100);
+}

@@ -1,0 +1,22 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as Stories from './avatar.stories';
+
+<Meta title="SOLID/Avatar" />
+
+# Avatar component
+
+This is the avatar component used to display an image.
+If no image is provided, an icon is shown instead.
+
+<Canvas of={Stories.Example} />
+
+## Usage
+
+`<nk-avatar></nk-avatar>`
+
+## @API
+
+### Properties
+
+- src (`string`)
+- iconName (`string`)
