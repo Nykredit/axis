@@ -78,9 +78,6 @@ export class TextInputBase implements BaseElement {
 
   componentWillRender() {
     this.initValue = this.value;
-    if (this.required) {
-      (this.el.querySelector('.component') as HTMLInputElement).required = true;
-    }
   }
 
   focus() {
@@ -150,6 +147,7 @@ export class TextInputBase implements BaseElement {
               onBlur={this.handleBlur}
               min={this.min}
               max={this.max}
+              required={this.required}
             />
           )}
         </div>
